@@ -8,10 +8,15 @@
         box-sizing: border-box;
         scroll-behavior: smooth;
        background-color: $bg-color;
+       max-width: 1920px;
     }
 
     .fontOverpass{
         font-family: 'Overpass', sans-serif;
+    }
+
+    .d-flex{
+        display: flex;
     }
 
 
