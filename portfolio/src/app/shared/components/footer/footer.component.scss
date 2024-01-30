@@ -1,0 +1,15 @@
+@import './../../../../styles.scss';
+
+section{
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+
+    .contentLeft{
+        // background-color: white;
+
+        >img{
+            width: 40px;
+        }
+    }
+}
