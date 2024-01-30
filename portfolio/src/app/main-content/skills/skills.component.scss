@@ -1,1 +1,11 @@
 @import './../../../styles.scss';
+
+section{
+    flex-wrap: wrap;
+    border: 2px solid black;
+
+    .cardsContent{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }    
+}
