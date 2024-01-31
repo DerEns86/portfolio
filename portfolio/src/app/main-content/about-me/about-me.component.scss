@@ -1,17 +1,47 @@
 @import './../../../styles.scss';
 
-h1{
+h1 {
     font-size: 64px;
 }
 
-section{
+section {
     height: 100vh;
     font-family: 'syne', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+    >div {
+        align-items: center;
+    }
 
-    .profileImg img{
-        width: 300px;
-        
-        
+    .profileImg img {
+        max-height: 500px;
+        border-radius: 5px;
+    }
+}
+
+.about {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.talkBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 70px;
+    border: 4px solid black;
+    font-size: 23px;
+    transition: transform 0.5s ease-in-out;
+
+    &:hover {
+        transform: scaleX(1.2);
+        font-weight: 500;
+
     }
 }
