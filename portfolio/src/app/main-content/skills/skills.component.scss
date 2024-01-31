@@ -1,11 +1,41 @@
 @import './../../../styles.scss';
 
 section{
-    flex-wrap: wrap;
-    border: 2px solid black;
+    font-family: 'syne', sans-serif;
+    .headline{
+        position: relative;
+        left: calc(50% - (510px / 2));
+        top: 40px;
+        z-index: 2;
+
+        display: block;
+        width: fit-content;
+        text-align: center;
+
+        font-size: 78px;
+        font-weight: 900;
+        
+        background-color: $bg-color;
+    }
 
     .cardsContent{
+        border: 2px solid black;
         flex-wrap: wrap;
         justify-content: space-evenly;
-    }    
+        padding: 60px 100px;
+        column-gap: 100px;
+        row-gap: 80px;
+    }   
+    
+    .skillcard{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    
+        img{
+            height: 75px;
+        }
+    }
+
+    
 }

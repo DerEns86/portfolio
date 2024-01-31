@@ -45,3 +45,15 @@ section {
 
     }
 }
+
+@media screen and (max-width: 600px) {
+    section {
+        >div{
+        flex-direction: column;
+        }
+        .profileImg img {
+            max-width: 90vw;
+            border-radius: 5px;
+        }
+    }
+}
