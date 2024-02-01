@@ -1,12 +1,27 @@
 <section>
     <h1>Portfolio</h1>
     <h3>Feel free to try out my latest development projects annd look into their code..</h3>
-    <div class="projectCard d-flex">
+    <div class="projectCard d-flex" *ngFor="let project of projects; let i = index">
         <div class="projectImg">
-            <img src="./../../../assets/img/ve-logo.png" alt="">
+            <img src="{{baseImgUrl}}{{project.imgUrl}}" alt="">
         </div>
-        <div class="projectDescription">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, aliquid!</p>
+        <div>
+            <div>
+                <p>{{project.id}}/{{projects.length}}</p>
+            </div>
+            <div>
+                <h3>{{project.title}}</h3>
+                <p>{{project.usedTech}}</p>
+            </div>
+            
+            <div class="projectDescription">
+                <p>{{project.description}}</p>
+            </div>
+            <div>
+                <a href="">LiveTest</a>
+                <a href="{{project.gitUrl}}" target="_blank">Github</a>
+            </div>
+            
         </div>
     </div>
 </section>
