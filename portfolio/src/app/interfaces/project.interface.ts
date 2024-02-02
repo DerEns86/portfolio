@@ -6,5 +6,6 @@ export interface IProject {
     description:string;
     projectUrl:string;
     gitUrl:string;
+    isHovered:boolean
 
 }

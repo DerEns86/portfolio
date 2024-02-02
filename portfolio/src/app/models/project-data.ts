@@ -10,6 +10,7 @@ export function getProjects(): IProject[] {
       description: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       projectUrl: "",
       gitUrl: "https://github.com/DerEns86/daNotes",
+      isHovered: false
     },
     {
       id: 2,
@@ -19,6 +20,7 @@ export function getProjects(): IProject[] {
       description: "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
       projectUrl: "",
       gitUrl: "https://github.com/DerEns86/daNotes",
+      isHovered: false
     },
     {
       id: 3,
@@ -28,6 +30,7 @@ export function getProjects(): IProject[] {
       description: "A very Simple Customer Relationship Management system working with CRUD functionality. ",
       projectUrl: "",
       gitUrl: "https://github.com/DerEns86/daNotes",
+      isHovered: false
     },
     {
       id: 4,
@@ -37,6 +40,7 @@ export function getProjects(): IProject[] {
       description: "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
       projectUrl: "",
       gitUrl: "https://github.com/DerEns86/daNotes",
+      isHovered: false
     },
     {
       id: 5,
@@ -46,6 +50,7 @@ export function getProjects(): IProject[] {
       description: "Simple currency converter based on a public API displaying exchange rate charts.",
       projectUrl: "",
       gitUrl: "https://github.com/DerEns86/daNotes",
+      isHovered: false
     },
   ];
 }

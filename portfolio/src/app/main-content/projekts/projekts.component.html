@@ -1,27 +1,30 @@
 <section>
     <h1>Portfolio</h1>
     <h3>Feel free to try out my latest development projects annd look into their code..</h3>
-    <div class="projectCard d-flex" *ngFor="let project of projects; let i = index">
-        <div class="projectImg">
-            <img src="{{baseImgUrl}}{{project.imgUrl}}" alt="">
-        </div>
-        <div>
-            <div>
-                <p>{{project.id}}/{{projects.length}}</p>
+    <div class="projectCard d-flex" *ngFor="let project of projects; let i = index" 
+        [class.isHovered]="projects[i].isHovered" (mouseenter)="onMouseEnter(i)" (mouseleave)="onMouseLeave(i)">
+        <div class="d-flex" [ngClass]="i % 2 === 0 ? 'normal' : 'rowReverse'">
+            <div class="projectImg">
+                <img src="{{baseImgUrl}}{{project.imgUrl}}" alt="">
             </div>
-            <div>
-                <h3>{{project.title}}</h3>
-                <p>{{project.usedTech}}</p>
+            <div class="projectInfo">
+                <div>
+                    <p>{{project.id}}/{{projects.length}}</p>
+                </div>
+                <div>
+                    <h3>{{project.title}}</h3>
+                    <p>{{project.usedTech}}</p>
+                </div>
+
+                <div class="projectDescription">
+                    <p>{{project.description}}</p>
+                </div>
+                <div>
+                    <a href="">LiveTest</a>
+                    <a href="{{project.gitUrl}}" target="_blank">Github</a>
+                </div>
+
             </div>
-            
-            <div class="projectDescription">
-                <p>{{project.description}}</p>
-            </div>
-            <div>
-                <a href="">LiveTest</a>
-                <a href="{{project.gitUrl}}" target="_blank">Github</a>
-            </div>
-            
         </div>
     </div>
 </section>

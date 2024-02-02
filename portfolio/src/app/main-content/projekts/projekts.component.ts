@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, OnChanges} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IProject } from '../../interfaces/project.interface';
 import { getProjects } from '../../models/project-data';
@@ -16,6 +16,7 @@ export class ProjektsComponent implements OnInit{
 
   projects: IProject[] = [];
   baseImgUrl = './../../../assets/img/projectImg/';
+  isHovered: boolean = false;
 
   constructor(){
   }
@@ -26,5 +27,16 @@ export class ProjektsComponent implements OnInit{
     console.log(this.projects)
   }
 
-//  @Input() project: Project
+  
+
+  onMouseEnter(index:number) {
+    this.projects[index].isHovered = true;
+    console.log(this.projects[index].isHovered)
+  }
+
+  onMouseLeave(index:number) {
+    this.projects[index].isHovered = true;
+  }
 }
+
+

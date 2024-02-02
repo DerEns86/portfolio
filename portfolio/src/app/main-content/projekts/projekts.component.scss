@@ -1,1 +1,83 @@
 @import './../../../styles.scss';
+
+@mixin toogleSide($direction) {
+    // position: relative;
+
+    @if $direction =='reverse' {
+        transform: translateX(50vw);
+        // right: -200px !important; // Text in X- (links) verschieben
+        transition: all 1s ease-in-out;
+    }
+
+    @else {
+        // left: -200px; // Text in X+ (rechts) verschieben
+        transform: translateX(-50vw);
+        transition: all 1s ease-in-out;
+    }
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: row;
+
+    >.normal {
+        .projectInfo {
+            @include toogleSide('normal');
+        }
+    }
+
+    >.rowReverse {
+        .projectInfo {
+            @include toogleSide('reverse');
+        }
+    }
+
+    img {
+        filter: grayscale(1);
+        position: relative;
+        z-index: 3;
+    }
+}
+
+.rowReverse {
+    flex-direction: row-reverse !important;
+
+    >.projectInfo {
+        // @include toogleSide('reverse');
+    }
+}
+
+.isHovered {
+    :first-child {
+        // transform: scale(1.2);
+    }
+}
+
+
+.projectCard{
+
+    &:hover{
+        .normal,.rowReverse{
+            .projectInfo{
+            // position: unset;
+            transform: translateX(0);
+        }
+        }
+        
+        img{
+            filter: unset;
+        }
+    }
+}
+
+.projectImg img {
+
+    // filter: grayscale(1);
+    // position: relative;
+    // z-index: 3;
+
+    &:hover {
+        // transform: scale(1.2);
+        // filter: unset;
+    }
+}
