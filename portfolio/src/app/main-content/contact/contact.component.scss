@@ -1,13 +1,34 @@
 @import './../../../styles.scss';
 
-section{
+
+.seperator {
+    width: 100%;
+    height: 250px;
+    margin-bottom: -4px;
+    position: relative;
+    top: 48px;
+    z-index: -1;
+    img{
+        width: 100%;
+    height: 100%;
+    }
+}
+
+section {
 
     color: white;
     background-color: black;
 
-   form{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-   }
+    h1{
+        font-size: 80px;
+        position: relative;
+        left: 22%;
+        bottom: 101px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
 }
