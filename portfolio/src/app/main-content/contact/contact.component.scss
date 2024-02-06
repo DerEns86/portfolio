@@ -43,16 +43,27 @@ section {
 
     }
 
+    .formGroup{
+        display: flex;
+        justify-content: center;
+    }
+}
     form {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 620px;
         width: 100%;
         gap: 28px;
 
         ::placeholder{
             color: rgba(255, 252, 243, 1);
             font-family: 'syne', sans-serif;
+            
+        }
+
+        div{
+            width: 100%;
         }
 
         input, textarea{
@@ -60,16 +71,19 @@ section {
             color: white;
             outline: none;
             border: none;
-            border-bottom: 2px solid rgba(255, 252, 243, 1),;
-            
-            width: 100%;
-        
+            border-bottom: 2px solid rgba(255, 252, 243, 1);
+            width: 100%;  
         }
+
+        input[type=text], input[type=email] {
+            height: 50px;
+        }
+
+        
         .sendMessage{
-            color: rgba(255, 252, 243, 1);
+            // color: rgba(255, 252, 243, 1);
             border: 1px solid rgba(255, 252, 243, 1);
         }
 
 
     }
-}
