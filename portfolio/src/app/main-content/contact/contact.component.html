@@ -6,11 +6,25 @@
     <h2>Want to discuss a new project</h2>
     <h3>Say hello! Let's discuss your ideas and make it happen</h3>
 
-    <form action="">
-        <input type="text" name="name" id="inputName" placeholder="Your Name">
-        <input type="email" name="email" id="inputEmail" placeholder="Your email">
-        <textarea name="message" id="inputTextarea" cols="30" rows="10" placeholder="Your message"></textarea>
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <div>
+            <input [(ngModel)]="contactData.name" type="text" name="nameInput" id="inputName" placeholder="Your Name"
+                #name="ngModel" required>
+            @if (!name.valid && name.touched) {
+            <span style="color: white;">Error name</span>
+            }
+        </div>
+        <input [(ngModel)]="contactData.email" type="email" name="email" id="inputEmail" placeholder="Your email"
+            #email="ngModel" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+        @if (!email.valid && email.touched) {
+        <span style="color: white;">Error email</span>
+        }
+        <textarea [(ngModel)]="contactData.message" name="message" id="inputTextarea" cols="30" rows="10"
+            placeholder="Your message" #message="ngModel" required></textarea>
+        @if (!message.valid && message.touched) {
+        <span style="color: white;">Error message</span>
+        }
         <input type="checkbox" name="inputCheckbox" id="checkbox">
-        <input type="button" value="Send message" class="sendMessage">
+        <input type="submit" value="Send message" class="sendMessage">
     </form>
 </section>
