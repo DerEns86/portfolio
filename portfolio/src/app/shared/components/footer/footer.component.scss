@@ -1,15 +1,44 @@
 @import './../../../../styles.scss';
 
-section{
+section {
     background-color: black;
     color: white;
     justify-content: space-between;
+    margin-top: -1px;
+    padding: 0 5vw 5vw 5vw;
 
-    .contentLeft{
+    .contentLeft {
         // background-color: white;
 
-        >img{
+        >img {
             width: 40px;
+            filter: brightness(300%);
+        }
+    }
+
+    .legalNotice {
+        padding-top: 8px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+
+        .contentLeft {
+            position: relative;
+        }
+
+        .contentRight {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+
+            .socialIcons {
+                gap: 10px;
+            }
         }
     }
 }
