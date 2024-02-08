@@ -16,11 +16,14 @@ section {
     background-color: black;
     color: white;
     // width: 90vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
+
+    // padding-left: 5vw;
+    // padding-right: 5vw;
+    // padding-top: 50px;
+    padding: 50px 5vw 35px 5vw;
 
 
-     font-family: 'syne', sans-serif;
+    font-family: 'syne', sans-serif;
     color: white;
     background-color: black;
 
@@ -31,59 +34,96 @@ section {
         bottom: 92px;
         padding-top: 20px;
         width: fit-content;
-    
-        &:hover{
-            color: rgba(89, 136, 255, 1);
+
+        &:hover {
+            color: $secondary-color;
         }
     }
 
 
-    h2{
-        color: rgba(89, 136, 255, 1);
-
+    h2 {
+        color: $secondary-color;
+        text-align: center;
     }
 
-    .formGroup{
+    h3{
+        text-align: center;
+    }
+
+    .formGroup {
         display: flex;
         justify-content: center;
     }
 }
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 620px;
-        width: 100%;
-        gap: 28px;
 
-        ::placeholder{
-            color: rgba(255, 252, 243, 1);
-            font-family: 'syne', sans-serif;
-            
-        }
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 620px;
+    width: 100%;
+    gap: 28px;
 
-        div{
-            width: 100%;
-        }
-
-        input, textarea{
-            background-color: black;
-            color: white;
-            outline: none;
-            border: none;
-            border-bottom: 2px solid rgba(255, 252, 243, 1);
-            width: 100%;  
-        }
-
-        input[type=text], input[type=email] {
-            height: 50px;
-        }
-
-        
-        .sendMessage{
-            // color: rgba(255, 252, 243, 1);
-            border: 1px solid rgba(255, 252, 243, 1);
-        }
-
+    ::placeholder {
+        color: rgba(255, 252, 243, 1);
+        font-family: 'syne', sans-serif;
 
     }
+
+    div {
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        background-color: black;
+        color: white;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid rgba(255, 252, 243, 1);
+        width: 100%;
+        font-family: 'Overpass', sans-serif
+    }
+
+    input[type=text],
+    input[type=email] {
+        height: 50px;
+        
+    }
+
+    .required {
+        color: red;
+        font-size: 0.8rem;
+    }
+}
+
+.privacy{
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+
+    >input{
+        width: fit-content;
+        border-color: rgba(255, 252, 243, 1);
+        background-color: black;
+        // color: white;
+        margin-right: 8px;
+    }
+
+    >span a{
+        text-decoration: none;
+        padding: 0 4px;
+        color: $secondary-color;
+    }
+}
+
+button {
+    padding: 20px 60px;
+    border: 4px solid rgba(187, 187, 187, 1);
+        background-color: black;
+        color: rgba(187, 187, 187, 1);
+
+    &:disabled {
+        opacity: 30%;
+    }
+}
