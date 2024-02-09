@@ -32,18 +32,9 @@ export function getProjects(): IProject[] {
       gitUrl: "https://github.com/DerEns86/daNotes",
       isHovered: false
     },
+    
     {
       id: 4,
-      imgUrl: "pokedex.png",
-      title: "Pokèdex",
-      usedTech: ["JavaScript" ,"HTML", "CSS", "API" ],
-      description: "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
-      projectUrl: "",
-      gitUrl: "https://github.com/DerEns86/daNotes",
-      isHovered: false
-    },
-    {
-      id: 5,
       imgUrl: "crypto.png",
       title: "Crypto Converter",
       usedTech: ["Angular" ,"Typescript", "RestAPI", "HTML", "CSS" ],

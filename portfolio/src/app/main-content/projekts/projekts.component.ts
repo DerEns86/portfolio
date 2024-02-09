@@ -35,7 +35,7 @@ export class ProjektsComponent implements OnInit{
   }
 
   onMouseLeave(index:number) {
-    this.projects[index].isHovered = true;
+    this.projects[index].isHovered = false;
   }
 }
 
