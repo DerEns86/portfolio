@@ -1,11 +1,65 @@
 <section>
     <h1>Portfolio</h1>
-    <h3>Feel free to try out my latest development projects annd look into their code..</h3>
-    <div class="projectCard d-flex" *ngFor="let project of projects; let i = index" 
-        [class.isHovered]="projects[i].isHovered" (mouseenter)="onMouseEnter(i)" (mouseleave)="onMouseLeave(i)">
+    <h2>Feel free to try out my latest development projects annd look into their code..</h2>
+
+    @for (project of projects; track project.id; let index = $index, odd = $odd, even = $even) {
+    <div class="wrapper" id="project{{index}}" [ngClass]="{'isHovered': project.isHovered}"
+        (mouseenter)="onMouseEnter(index)" (mouseleave)="onMouseLeave(index)">
+
+
+        <div class="projectCard" [ngClass]="{'reverse': odd, 'normal': even}">
+
+            <div class="number">
+                <p>0{{project.id}}/ 0{{projects.length}}</p>
+            </div>
+
+            <div class="projectImg">
+                <img src="{{baseImgUrl}}{{project.imgUrl}}" alt="">
+                <div class="border"></div>
+                <div class="arrow"><img src="./../../../assets/img/icon/arrow2.png" alt=""></div>
+
+            </div>
+
+
+
+            <div class="projectInfo">
+
+                <div>
+                    <h3>{{project.title}}</h3>
+                    <p>{{project.usedTech}}</p>
+                </div>
+
+                <div class="projectDescription">
+                    <p>{{project.description}}</p>
+                </div>
+                <div>
+                    <a href="">LiveTest</a>
+                    <a href="{{project.gitUrl}}" target="_blank">Github</a>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+    }
+
+
+
+
+    <!-- <div class="projectCard d-flex" *ngFor="let project of projects; let i = index"
+    [ngClass]="{'isHovered': project.isHovered}" 
+         (mouseenter)="onMouseEnter(i)" (mouseleave)="onMouseLeave(i)">
         <div class="d-flex" [ngClass]="i % 2 === 0 ? 'normal' : 'rowReverse'">
             <div class="projectImg">
                 <img src="{{baseImgUrl}}{{project.imgUrl}}" alt="">
+                @if (project.isHovered) {
+                    <div [ngClass]="'border arrow'"></div>
+                }
             </div>
             <div class="projectInfo">
                 <div>
@@ -26,5 +80,5 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 </section>
