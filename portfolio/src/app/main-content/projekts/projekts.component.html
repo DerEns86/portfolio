@@ -25,16 +25,16 @@
             <div class="projectInfo">
 
                 <div>
-                    <h3>{{project.title}}</h3>
-                    <p>{{project.usedTech}}</p>
+                    <h3 class="fontOverpass">{{project.title}}</h3>
+                    <p class="fontOverpass">{{project.usedTech.join(' | ')}}</p>
                 </div>
 
                 <div class="projectDescription">
                     <p>{{project.description}}</p>
                 </div>
-                <div>
-                    <a href="">LiveTest</a>
-                    <a href="{{project.gitUrl}}" target="_blank">Github</a>
+                <div class="fontOverpass d-flex">
+                    <div class="btn"><a href="">LiveTest</a></div>
+                    <div class="btn"><a href="{{project.gitUrl}}" target="_blank">Github</a></div>
                 </div>
 
             </div>

@@ -33,15 +33,5 @@ export function getProjects(): IProject[] {
       isHovered: false
     },
     
-    {
-      id: 4,
-      imgUrl: "crypto.png",
-      title: "Crypto Converter",
-      usedTech: ["Angular" ,"Typescript", "RestAPI", "HTML", "CSS" ],
-      description: "Simple currency converter based on a public API displaying exchange rate charts.",
-      projectUrl: "",
-      gitUrl: "https://github.com/DerEns86/daNotes",
-      isHovered: false
-    },
   ];
 }
