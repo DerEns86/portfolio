@@ -6,41 +6,41 @@
     <div class="projectWrapper" id="project{{index}}" [ngClass]="{'isHovered': project.isHovered}"
         (mouseenter)="onMouseEnter(index)" (mouseleave)="onMouseLeave(index)">
 
- 
+
         <div class="projectCard" [ngClass]="{'reverse': odd, 'normal': even}">
 
-           <div class="number">
+            <div class="number">
                 <p>0{{project.id}}/ 0{{projects.length}}</p>
             </div>
 
             <div class="wrapper">
-            <div class="projectImg">
-                <img src="{{baseImgUrl}}{{project.imgUrl}}" alt="">
-                <!-- <div class="border"></div> -->
-                <!-- <div class="arrow"><img src="./../../../assets/img/icon/arrow2.png" alt=""></div> -->
+                <div class="projectImg">
+                    <img src="{{baseImgUrl}}{{project.imgUrl}}" alt="">
+                    <!-- <div class="border"></div> -->
+                    <!-- <div class="arrow"><img src="./../../../assets/img/icon/arrow2.png" alt=""></div> -->
+
+                </div>
+
+
+
+                <div class="projectInfo">
+
+                    <div>
+                        <h3>{{project.title}}</h3>
+                        <p class="fontOverpass">{{project.usedTech.join(' | ')}}</p>
+                    </div>
+
+                    <div class="projectDescription fontOverpass">
+                        <p>{{project.description}}</p>
+                    </div>
+                    <div class="fontOverpass d-flex ">
+                        <div class="btn"><a href="">LiveTest</a></div>
+                        <div class="btn"><a href="{{project.gitUrl}}" target="_blank">Github</a></div>
+                    </div>
+
+                </div>
 
             </div>
-
-
-
-            <div class="projectInfo">
-
-                <div>
-                    <h3>{{project.title}}</h3>
-                    <p class="fontOverpass">{{project.usedTech.join(' | ')}}</p>
-                </div>
-
-                <div class="projectDescription fontOverpass">
-                    <p>{{project.description}}</p>
-                </div>
-                <div class="fontOverpass d-flex">
-                    <div class="btn"><a href="">LiveTest</a></div>
-                    <div class="btn"><a href="{{project.gitUrl}}" target="_blank">Github</a></div>
-                </div>
-
-            </div>
-
-</div>
 
         </div>
 
@@ -52,5 +52,5 @@
 
 
 
- 
+
 </section>
