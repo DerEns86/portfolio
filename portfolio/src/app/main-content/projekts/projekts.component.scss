@@ -2,15 +2,6 @@
 
 
 
-// @mixin setDirection($direction, $distance) {
-//     #{$direction}: $distance;
-// }
-
-// @mixin setTranslate($axis, $distance) {
-//     transform: translate#{$axis}(#{$distance});
-// }
-
-
 section {
   font-family: 'syne', sans-serif;
   overflow: hidden;
@@ -30,13 +21,11 @@ section {
 }
 
 
-
 .projectCard.reverse .wrapper {
   flex-direction: row-reverse;
 }
 
 .projectInfo {
-  // width: 400px;
   min-width: 25vw;
   max-width: 37vw;
 }
@@ -64,15 +53,14 @@ section {
   border: 4px solid black;
   opacity: 0;
   transition: opacity 1s linear;
-  /* ... weitere Styles für den "Border" */
 }
 
 .projectCard.reverse .projectImg::before {
-  left: -2%;
+  left: -4%;
   right: 2%;
 }
 
-.wrapper:hover .projectImg::before{
+.wrapper:hover .projectImg::before {
   opacity: 1;
 }
 
@@ -91,26 +79,34 @@ section {
   background-repeat: no-repeat;
   opacity: 0;
   transition: all 0.5s linear;
-  /* ... weitere Styles für den Pfeil */
 }
 
 .projectCard.reverse .projectImg::after {
-  left: calc(-2% - 22px);
-  right: calc(100% + 12px);
+  left: calc(-8%);
+
 }
 
-
 .wrapper:hover .projectImg::after {
-    opacity: 1;
-    transform: rotate(0);
-  
+  opacity: 1;
+  transform: rotate(0);
+
+}
+
+.wrapper:hover .projectInfo,
+.wrapper:focus .projectInfo,
+.wrapper:active .projectInfo
+{
+  opacity: 1;
 }
 
 .projectInfo {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 15px;
+  opacity: 0;
+  transition: all 1s linear;
 
   h3 {
     font-size: 45px;
@@ -159,33 +155,47 @@ section {
 @media screen and (max-width: 1000px) {
   .wrapper {
     flex-direction: column !important;
+    
   }
 
-  .reverse .wrapper {
-    // padding-right: 38px;
+  .projectCard.reverse .wrapper {
     align-items: flex-end;
     text-align: end;
   }
 
   .wrapper .projectInfo {
     max-width: unset;
+    width: 100%;
+  }
+
+  .reverse .btnContainer {
+    justify-content: flex-end;
+
+    >:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 @media screen and (max-width: 750px) {
-  .projectImg{
+  .projectImg {
     width: calc(100% - 7vw);
   }
+
+  .wrapper {
+    gap: 10px;
+  }
+  
 }
 
 @media screen and (max-width: 500px) {
-  .projectImg{
+  .projectImg {
     width: calc(80%);
   }
-  .projectCard .projectImg::after{
+
+  .projectCard .projectImg::after {
     width: 30px;
     height: 30px;
     bottom: calc(48% - 15px);
   }
 }
-
