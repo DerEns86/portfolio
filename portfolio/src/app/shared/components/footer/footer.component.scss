@@ -18,6 +18,12 @@ section {
 
     .legalNotice {
         padding-top: 8px;
+        text-align: end;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
     }
 }
 

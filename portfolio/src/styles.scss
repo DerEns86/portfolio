@@ -4,23 +4,21 @@ $bg-color: #FFFCF3;
 $bg-color-black: black;
 $secondary-color: rgb(89, 136, 255);
 
-*{
-  margin: 0;
-  max-width: 1920px;
-}
 
-*{
+* {
   box-sizing: border-box;
 }
 
-*{
+* {
   scroll-behavior: smooth;
 }
 
 body {
-   background-color: $bg-color;
-   padding-left: 5vw;
-    padding-right: 5vw;
+  background-color: $bg-color;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin: 0 auto;
+  max-width: 1920px;
 }
 
 .fontOverpass {
@@ -30,6 +28,40 @@ body {
 .d-flex {
   display: flex;
 }
+.seperatorWrapper{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.seperatorArrow {
+
+  transform: scale(0.8);
+  transition: transform 0.3s linear;
+  width: fit-content;
+  padding-inline: 5vw;
+
+&:hover {
+  transform: scale(1);
+}
+}
+
+
+.isMirrored {
+
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+@media screen and (max-width: 500px){
+  .seperatorArrow img{
+    height: 150px;
+  }
+}
+
+
 
 
 

@@ -22,16 +22,16 @@ export function getProjects(): IProject[] {
       gitUrl: "https://github.com/DerEns86/daNotes",
       isHovered: false
     },
-    {
-      id: 3,
-      imgUrl: "simpleCrm.png",
-      title: "Simple CRM",
-      usedTech: ["Angular" ,"Firebase" ],
-      description: "A very Simple Customer Relationship Management system working with CRUD functionality. ",
-      projectUrl: "",
-      gitUrl: "https://github.com/DerEns86/daNotes",
-      isHovered: false
-    },
+    // {
+    //   id: 3,
+    //   imgUrl: "simpleCrm.png",
+    //   title: "Simple CRM",
+    //   usedTech: ["Angular" ,"Firebase" ],
+    //   description: "A very Simple Customer Relationship Management system working with CRUD functionality. ",
+    //   projectUrl: "",
+    //   gitUrl: "https://github.com/DerEns86/daNotes",
+    //   isHovered: false
+    // },
     
   ];
 }

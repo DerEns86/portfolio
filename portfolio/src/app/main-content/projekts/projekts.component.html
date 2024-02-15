@@ -1,6 +1,6 @@
 <section>
     <h1>Portfolio</h1>
-    <h2>Feel free to try out my latest development projects and look into their code..</h2>
+    <h2 class="fontOverpass">Feel free to try out my latest development projects and look into their code..</h2>
 
     @for (project of projects; track project.id; let index = $index, odd = $odd, even = $even) {
     <div class="projectWrapper" id="project{{index}}" [ngClass]="{'isHovered': project.isHovered}"
@@ -54,3 +54,8 @@
 
 
 </section>
+<div class="seperatorWrapper">
+    <div class="seperatorArrow">
+        <img src="./../../../assets/img/icon/arrowStatic.png" alt="">
+    </div>
+</div>

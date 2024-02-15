@@ -8,6 +8,20 @@ section {
   padding-bottom: 50px;
 }
 
+h1{
+  font-size: clamp(45px, 8vw, 78px);
+  text-align: center;
+  font-weight: 800;
+  &:hover{
+    color: $secondary-color;
+  }
+}
+
+h2{
+  font-size: 23px;
+  text-align: center;
+}
+
 .wrapper {
   display: flex;
   flex-direction: row;
