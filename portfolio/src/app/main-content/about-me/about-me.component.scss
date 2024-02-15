@@ -5,6 +5,9 @@ h1 {
     font-weight: 800;
     padding-bottom: 35px;
     padding-top: 35px;
+    &:hover {
+        color: $secondary-color;
+    }
 }
 
 section {
@@ -68,6 +71,7 @@ section {
 
     >.text {
         font-size: 23px;
+        text-wrap: balance;
     }
 }
 
@@ -89,7 +93,6 @@ section {
 }
 
 .seperator:hover{
-    // animation: drawPath1 2s ease forwards;
     animation: drawPath2 2s ease forwards;
 }
 

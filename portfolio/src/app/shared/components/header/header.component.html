@@ -2,21 +2,22 @@
 
 <a href=""><img id="logo" src="./../../../../assets/img/ve-logo.png" alt=""></a>
 
-<div (click)="ontoggleMenu()" ><svg class="hb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="black" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
-    <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
-      <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
-      <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
-    </path>
-    <rect width="10" height="10" stroke="none">
-      <animate dur="2s" id="reverse" attributeName="width" begin="click" />
-    </rect>
-    <rect width="10" height="10" stroke="none">
-      <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
-      <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
-    </rect>
-  </svg></div>
+<div (click)="ontoggleMenu()" >
+  <svg *ngIf="!menuOpened" class="start" width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2 2H42" stroke="black" stroke-width="4" stroke-linecap="square"/>
+    <path d="M2 19H42" stroke="black" stroke-width="4" stroke-linecap="square"/>
+    <path d="M2 36H42" stroke="black" stroke-width="4" stroke-linecap="square"/>
+    </svg>
 
-<!-- <img id="menu" (click)="ontoggleMenu()" src="./../../../../assets/img/burger-menu.png" alt=""> -->
+    <svg *ngIf="menuOpened" class="end" width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 15.8555L35.3209 2.99972" stroke="black" stroke-width="4" stroke-linecap="square"/>
+      <path d="M4.67969 3.14258L35.3215 28.8541" stroke="black" stroke-width="4" stroke-linecap="square"/>
+      <path d="M5 28.8555L20.3209 15.9997" stroke="black" stroke-width="4" stroke-linecap="square"/>
+      </svg>
+      
+  </div>
+
+
 
 
 </section>
@@ -25,14 +26,14 @@
 <div class="overlay" >
    <div class="wrapper d-flex">
         <div class="links">
-          <a href="#"><span>About me</span></a>
-          <a href="#"><span>My skills</span></a>
-          <a href="#"><span>Portfolio</span></a>
+          <a href="#aboutMe"><span (click)="onCloseMenu()">About me</span></a>
+          <a href="#skills"><span (click)="onCloseMenu()">My skills</span></a>
+          <a href="#projects"><span (click)="onCloseMenu()">Portfolio</span></a>
         </div>
         <div class="contactContainer d-flex">
           <div class="leftContent">
             <h2>Say Hi!</h2>
-            <p>contact&#64;v-ens.de</p>
+            <p class="fontOverpass">contact&#64;v-ens.de</p>
           </div>
           <div class="rightContent">
             <div class="socialLinks">

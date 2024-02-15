@@ -15,4 +15,11 @@ export class HeaderComponent {
   ontoggleMenu(){
     this.menuOpened = !this.menuOpened;
   }
+
+  onCloseMenu(){
+    this.menuOpened = false;
+  }
 }
+
+
+

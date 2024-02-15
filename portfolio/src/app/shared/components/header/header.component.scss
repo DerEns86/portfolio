@@ -44,17 +44,17 @@ section {
     height: 100%;
     margin-inline: 5vw;
     flex-direction: column;
-    justify-content: space-between;
     max-width: 1920px;
     margin: 0 auto;
     padding-inline: 5vw;
+    font-family: 'syne', sans-serif;
 }
 
 .links {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'syne', sans-serif;
+    
 
     font-size: clamp(45px, 8vw, 96px);
     font-weight: 700;
@@ -62,6 +62,7 @@ section {
     letter-spacing: -0.025em;
     text-align: center;
     gap: 20px;
+    padding-bottom: 25px;
 
     a {
         text-decoration: none;
@@ -92,7 +93,8 @@ section {
         //   transform: translateX(-50%);
     }
 
-    a:hover {
+    a:hover,
+    a:active {
         span::before {
             left: 50%;
             width: 50%;
@@ -109,16 +111,49 @@ section {
 
 .contactContainer {
     background-color: black;
-    color: white;
-    height: 300px;
+    color: $bg-color;
+    max-height: 400px;
     clip-path: polygon(0% 0%, 100% 40%, 100% 100%, 0% 100%);
+    justify-content: space-between;
+    padding-inline: 5vw;
+    align-items: end;
+    padding-bottom: 30px;
+    margin-top: -25px;
 
 
 }
 
-.hb {
-    width: 40px;
-    margin: 0 auto;
-    display: block;
-    // fill : $bg-color;
+.leftContent{
+    
+    p {
+        margin-block-end: 0;
+        margin-block-start: 0;
+        font-size: 23px;
+    }
+    h2{
+        font-size: clamp(45px, 8vw, 78px);
+        color: $secondary-color;
+        margin-block-end: 0;
+    }
 }
+
+@media screen and (max-width: 500px) {
+    .overlay{
+        
+    }
+    .contactContainer{
+        flex-direction: column;
+
+        .leftContent{
+            width: 100%;
+            padding-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .rightContent{
+        display: none;
+    }
+}
+
