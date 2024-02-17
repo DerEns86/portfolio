@@ -1,7 +1,7 @@
 <section>
     <span class="headline">My skills</span>
     <div class="cardsContent d-flex">
-        <div *ngFor="let skill of skills; let i = index" class="skillcard d-flex">
+        <div *ngFor="let skill of skills; let i = index" class="skillcard d-flex" data-aos="flip-down">
             <img src="./../../../assets/img/icon/{{skill.iconPath}}" alt="{{skill.name}}">
             <p class="fontOverpass">{{skill.name}}</p>
         </div>

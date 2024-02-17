@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,13 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'portfolio';
+
+  ngOnInit(): void {
+    AOS.init();
+
+  }
+
+
 }
