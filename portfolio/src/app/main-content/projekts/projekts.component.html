@@ -9,8 +9,8 @@
 
         <div class="projectCard" [ngClass]="{'reverse': odd, 'normal': even}">
 
-            <div class="number">
-                <p>0{{project.id}}/ 0{{projects.length}}</p>
+            <div class="number" [ngClass]="{'end': even}">
+                <span>0{{project.id}}/ 0{{projects.length}}</span>
             </div>
 
             <div class="wrapper">
