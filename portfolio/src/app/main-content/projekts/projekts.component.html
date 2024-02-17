@@ -1,5 +1,5 @@
 <section>
-    <h1>Portfolio</h1>
+    <h1 data-aos="zoom-in">Portfolio</h1>
     <h2 class="fontOverpass">Feel free to try out my latest development projects and look into their code..</h2>
 
     @for (project of projects; track project.id; let index = $index, odd = $odd, even = $even) {
@@ -23,7 +23,7 @@
 
 
 
-                <div class="projectInfo">
+                <div class="projectInfo" data-aos-delay="300" [attr.data-aos]="odd ? 'fade-right' : 'fade-left'">
 
                     <div>
                         <h3>{{project.title}}</h3>

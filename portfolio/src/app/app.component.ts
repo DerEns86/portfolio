@@ -1,4 +1,4 @@
-import { Component, HostListener, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import AOS from 'aos';
@@ -12,11 +12,15 @@ import AOS from 'aos';
 })
 export class AppComponent implements OnInit {
   title = 'portfolio';
-
+  @HostListener('window:resize', ['$event'])
+onResize(event: { target: { innerWidth: any; }; }) {
+  let width=event.target.innerWidth;
+  console.log(event.target.innerWidth);
+  return width;
+}
   ngOnInit(): void {
     AOS.init();
 
   }
-
 
 }
