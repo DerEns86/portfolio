@@ -1,15 +1,18 @@
 <section>
     <span class="headline" data-aos="zoom-in">My skills</span>
     <div class="cardsContent d-flex">
-        <div *ngFor="let skill of skills; let i = index" class="skillcard d-flex" data-aos="flip-down" data-aos-offset="20">
+        <div *ngFor="let skill of skills; let i = index" class="skillcard d-flex" data-aos="flip-down"
+            data-aos-offset="20">
             <img src="./../../../assets/img/icon/{{skill.iconPath}}" alt="{{skill.name}}">
             <p class="fontOverpass">{{skill.name}}</p>
         </div>
     </div>
-    
+
 </section>
-<div class="seperatorWrapper isMirrored">
-    <div class="seperatorArrow">
-        <img src="./../../../assets/img/icon/arrowStatic.png" alt="">
+<div class="isMirrored">
+    <div class="seperatorWrapper" data-aos="zoom-in">
+        <div class="seperatorArrow">
+            <img src="./../../../assets/img/icon/arrowStatic.png" alt="">
+        </div>
     </div>
 </div>

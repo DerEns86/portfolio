@@ -32,27 +32,30 @@ body {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  // height: 150px;
 }
 .seperatorArrow {
 
-  transform: scale(0.8);
+  // transform: scale(0.8);
   transition: transform 0.3s linear;
   width: fit-content;
   padding-inline: 5vw;
+  height: 100%;
 
 &:hover {
-  transform: scale(1);
+  // transform: scale(1);
 }
 }
 
 
 .isMirrored {
 
-  -moz-transform: scale(-1, 1);
-  -webkit-transform: scale(-1, 1);
-  -o-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
-  transform: scale(-1, 1);
+  transform: rotateY(180deg);
+  // -moz-transform: scale(-1, 1);
+  // -webkit-transform: scale(-1, 1);
+  // -o-transform: scale(-1, 1);
+  // -ms-transform: scale(-1, 1);
+  // transform: scale(-1, 1);
 }
 
 @media screen and (max-width: 500px){
