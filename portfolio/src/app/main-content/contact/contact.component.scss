@@ -9,11 +9,16 @@
     height: 15vh;
     margin-bottom: -1px;
 }
-
-section {
-    // leftTop,rightTop,rightBottom leftBottom
+.wrapper{
     clip-path: polygon(0% 0%, 100% 12.5%, 100% 100%, 0% 100%);
     background-color: black;
+}
+.section {
+    // leftTop,rightTop,rightBottom leftBottom
+    
+    max-width: 1420px;
+    width: 100%;
+    margin: 0 auto;
     color: $bg-color;
     // width: 90vw;
 

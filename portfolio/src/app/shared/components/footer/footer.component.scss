@@ -1,11 +1,19 @@
 @import './../../../../styles.scss';
 
-section {
+.wrapper{
     background-color: black;
+}
+
+.section {
+    // background-color: black;
     color: $bg-color;
     justify-content: space-between;
-    margin-top: -1px;
+    // margin-top: -1px;
     padding: 0 5vw 5vw 5vw;
+    max-width: 1420px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -1px;
 
     .contentLeft {
         // background-color: white;
