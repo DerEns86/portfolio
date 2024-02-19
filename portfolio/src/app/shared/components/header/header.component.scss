@@ -8,11 +8,7 @@ section {
     height: 100px;
     padding-inline: 5vw;
 
-    position: sticky;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 10;
+   
 
     #logo {
         width: 48px;
@@ -23,6 +19,18 @@ section {
     #menu {
         width: 32px;
     }
+    svg{
+        cursor: pointer;
+    }
+}
+
+.width{
+    background-color: $bg-color;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
 }
 
 .overlay {
@@ -31,8 +39,7 @@ section {
     right: 0;
     width: 100%;
     top: 100px;
-    height: 50vh;
-    max-height: 50vh;
+    height: 100vh;
     background-color: $bg-color;
     z-index: 99;
 
@@ -43,9 +50,9 @@ section {
     height: 100%;
     margin-inline: 5vw;
     flex-direction: column;
-    max-width: 1920px;
+    // max-width: 1920px;
     margin: 0 auto;
-    padding-inline: 5vw;
+    // padding-inline: 5vw;
     font-family: 'syne', sans-serif;
 }
 
@@ -53,6 +60,12 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1420px;
+    margin: 0 auto;
+
+    // max-height: 400px;
+    // height: 100%;
+    height: calc(100% - 350px);
     
 
     font-size: clamp(45px, 8vw, 96px);
@@ -105,21 +118,35 @@ section {
     }
 }
 
-
+a{
+    text-decoration: none;
+    color: $bg-color;
+}
 
 
 .contactContainer {
-    background-color: black;
+    
     color: $bg-color;
-    max-height: 400px;
-    clip-path: polygon(0% 0%, 100% 40%, 100% 100%, 0% 100%);
+    // max-height: 400px;
+    
     justify-content: space-between;
     padding-inline: 5vw;
     align-items: end;
+    padding-top: 1vh;
     padding-bottom: 30px;
     margin-top: -25px;
+   max-width: 1420px;
+   margin: 0 auto;
+   height: 250px;
 
 
+}
+
+.wrapperWidth{
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 40%, 100% 100%, 0% 100%);
+    background-color: black;
+    // flex: 1;
 }
 
 .leftContent{
@@ -137,9 +164,7 @@ section {
 }
 
 @media screen and (max-width: 500px) {
-    .overlay{
-        
-    }
+ 
     .contactContainer{
         flex-direction: column;
 

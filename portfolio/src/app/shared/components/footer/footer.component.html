@@ -1,17 +1,23 @@
 <div class="wrapper">
-<div class="d-flex section">
-    <div class="contentLeft">
-        <img src="./../../../../assets/img/ve-logo.png" alt="">
-    </div>
-    <div class="contentRight">
-        <div class="socialIcons d-flex">
-            <img src="./../../../../assets/img/icon/github.png" alt="">
-            <img src="./../../../../assets/img/icon/eMail.png" alt="">
-            <img src="./../../../../assets/img/icon/linkedIn.png" alt="">
+    <div class="d-flex section">
+        <div class="contentLeft">
+            <img src="./../../../../assets/img/ve-logo.png" alt="">
         </div>
-        <div class="legalNotice">
-            <span><a [routerLink]="['/imprint']">Legal notice</a></span>
+        <div class="contentRight">
+            <div class="socialIcons d-flex">
+                <a href="https://github.com/derens86" target="_blank"><img
+                        src="./../../../../assets/img/icon/github.png" alt=""></a>
+                <a href="#contact"><img src="./../../../../assets/img/icon/eMail.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/viktor-ens-ba69aa246" target="_blank"><img
+                        src="./../../../../assets/img/icon/linkedIn.png" alt=""></a>
+            </div>
+            <div class="legalNotice">
+                <span><a [routerLink]="['/imprint']">Legal notice</a></span>
+            </div>
+        </div>
+        <div class="arrowUp" (click)="scrollup()">
+            <img src="./../../../../assets/img/icon/arrow-up.png" alt="">
         </div>
     </div>
-</div>
+
 </div>

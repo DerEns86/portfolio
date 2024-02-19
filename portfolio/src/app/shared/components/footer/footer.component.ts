@@ -10,4 +10,8 @@ import { RouterLink } from '@angular/router';
 })
 export class FooterComponent {
 
+scrollup(){
+  window.scrollTo(0, 0);
+}
+
 }

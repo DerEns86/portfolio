@@ -9,11 +9,13 @@
     color: $bg-color;
     justify-content: space-between;
     // margin-top: -1px;
-    padding: 0 5vw 5vw 5vw;
+    padding-inline: 5vw;
+    padding-bottom: 50px;
     max-width: 1420px;
     width: 100%;
     margin: 0 auto;
     margin-top: -1px;
+    position: relative;
 
     .contentLeft {
         // background-color: white;
@@ -32,6 +34,20 @@
             text-decoration: none;
             color: $bg-color;
         }
+    }
+}
+
+.arrowUp{
+    position: absolute;
+    bottom: 150px;
+    right: 5vw;
+    width: 40px;
+    height: 56px;
+    transition: transform 0.1s linear;
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.3);
     }
 }
 
@@ -54,5 +70,8 @@
                 gap: 10px;
             }
         }
+    }
+    .arrowUp{
+        display: none;
     }
 }
