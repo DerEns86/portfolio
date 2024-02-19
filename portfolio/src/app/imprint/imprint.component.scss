@@ -1,0 +1,11 @@
+.section{
+    max-width: 1420px;
+    margin: 0 auto;
+    width: 85vw;
+}
+
+.wrapper{
+    clip-path: polygon(0% 0%, 100% 12.5%, 100% 100%, 0% 100%);
+    background-color: black;
+    padding-top: 30px;
+}

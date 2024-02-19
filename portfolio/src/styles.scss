@@ -42,7 +42,9 @@ section{
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  // height: 150px;
+  padding-inline: 5vw;
+  max-width: 1420px;
+  margin: 0 auto;
 }
 .seperatorArrow {
 
@@ -63,7 +65,7 @@ section{
 
 @media screen and (max-width: 500px){
   .seperatorArrow img{
-    height: 150px;
+    height: 120px;
   }
 }
 
