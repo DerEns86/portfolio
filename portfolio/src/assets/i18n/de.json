@@ -1,11 +1,30 @@
 {
     "About me": "Über mich",
-    "My skills": "Meine Skills",
+    "My skills": "Skills",
     "Say Hi!": "Sag Hi!",
     "Developer": "Entwickler",
     "aboutMe_content1": "Hallo zusammen, ich bin Viktor, ein leidenschaftlicher Frontend-Entwickler aus Waldbröl im Oberbergischen Kreis.",
     "aboutMe_content2": "Ich erstelle Webanwendungen mit JavaScript & Angular, sowohl selbstständig als auch im Team.",
     "aboutMe_content3": "Ich bin fasziniert von der Vielfalt des Programmierens und als Junior Frontend-Entwickler suche ich nach Möglichkeiten, meine Fähigkeiten zu präsentieren.",
     "aboutMe_content4": "Ihr seid herzlich eingeladen, mein öffentliches Portfolio zu erkunden.",
-    "Let's talk": "Kontakt"
+    "Let's talk": "Kontakt",
+    "Feel free" : "Fühlen Sie sich frei, meine neuesten Entwicklungsprojekte auszuprobieren und in ihren Code zu schauen...",
+    "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.":"Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.":"Jump & Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+    "Live Test":"Testen",
+    "Want to discuss a new project":"Sie haben ein neues Projekt?",
+    "Say hello! Let's discuss your ideas and make it happen": "Kontaktieren Sie mich und wir verwirklichen Ihre Idee",
+    "Your Name": "Ihr Name",
+    "Your email": "Ihre Email",
+    "Your message": "Ihre Nachricht",
+    "Please enter your name": "Bitte geben Sie Ihren Namen ein",
+    "Please enter your e-mail": "Bitte geben Sie eine gültige Email-Adresse ein",
+    "Please leave a message": "Bitte hinterlassen Sie uns eine Nachricht",
+    "I've read the": "Ich habe die",
+    "privacy policy" : "Datenschutzbestimmungen",
+    "and agree to the processing of my data as outlined": " gelesen und erkläre mich mit der Verarbeitung meiner Daten wie beschrieben einverstanden",
+    "Send message": "Nachricht senden",
+    "imprint" : "Impressum"
+
+    
 }

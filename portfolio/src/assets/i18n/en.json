@@ -7,5 +7,22 @@
     "aboutMe_content2": "I create web applications with JavaScript & Angular, both independently and as part of a team.",
     "aboutMe_content3": "I am fascinated by the diversity of programming and as a junior front-end developer I am looking for opportunities to showcase my skills.",
     "aboutMe_content4": "You are cordially invited to explore my public portfolio.",
-    "Let's talk": "Let's talk"
+    "Let's talk": "Let's talk",
+    "Feel free" : "Feel free to try out my latest development projects and look into their code..",
+    "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.":"Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "Live Test":"Live Test",
+    "Want to discuss a new project": "Want to discuss a new project",
+    "Say hello! Let's discuss your ideas and make it happen": "Say hello! Let's discuss your ideas and make it happen",
+    "Your Name": "Your Name",
+    "Your email": "Your email",
+    "Your message": "Your message",
+    "Please enter your name": "Please enter your name",
+    "Please enter your e-mail": "Please enter your e-mail",
+    "Please leave a message": "Please leave a message",
+    "I've read the": "I've read the",
+    "privacy policy":"privacy policy",
+    "and agree to the processing of my data as outlined":"and agree to the processing of my data as outlined",
+    "Send message":"Send message",
+    "imprint": "Legal notice"
 }
