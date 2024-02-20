@@ -20,6 +20,10 @@ export class AppComponent implements OnInit {
     translate.use('de'); // Aktiviere die Standard-Sprache
   }
 
+  getLanguage(){
+    return this.translate.store.currentLang
+  }
+
 
   @HostListener('window:resize', ['$event'])
 onResize(event: { target: { innerWidth: any; }; }) {

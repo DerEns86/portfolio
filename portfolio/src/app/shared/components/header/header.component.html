@@ -1,31 +1,36 @@
 <div class="width">
-<section>
-  <a href=""><img id="logo" src="./../../../../assets/img/ve-logo.png" alt=""></a>
-
-  <button (click)="changeLanguage('de')">de</button>
-  <button (click)="changeLanguage('en')">en</button>
-
-  <div (click)="ontoggleMenu()">
-    <svg *ngIf="!menuOpened" class="start" width="44" height="38" viewBox="0 0 44 38" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <path d="M2 2H42" stroke="black" stroke-width="4" stroke-linecap="square" />
-      <path d="M2 19H42" stroke="black" stroke-width="4" stroke-linecap="square" />
-      <path d="M2 36H42" stroke="black" stroke-width="4" stroke-linecap="square" />
-    </svg>
-
-    <svg *ngIf="menuOpened" class="end" width="40" height="32" viewBox="0 0 40 32" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <path d="M20 15.8555L35.3209 2.99972" stroke="black" stroke-width="4" stroke-linecap="square" />
-      <path d="M4.67969 3.14258L35.3215 28.8541" stroke="black" stroke-width="4" stroke-linecap="square" />
-      <path d="M5 28.8555L20.3209 15.9997" stroke="black" stroke-width="4" stroke-linecap="square" />
-    </svg>
-
-  </div>
+  <section>
+    <a href=""><img id="logo" src="./../../../../assets/img/ve-logo.png" alt=""></a>
 
 
 
+    <div class="buttonRight d-flex">
+      
+      <div *ngIf="currentLanguage === 'en'"  (click)="changeLanguage()" class="btnLanguage">DE</div>
+      <div *ngIf="currentLanguage === 'de'"  (click)="changeLanguage()" class="btnLanguage">EN</div>
+      
+      <div (click)="ontoggleMenu()" class="d-flex">
+        <svg *ngIf="!menuOpened" class="start" width="48" height="38" viewBox="0 0 48 38" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2H42" stroke="black" stroke-width="4" stroke-linecap="square" />
+          <path d="M2 19H42" stroke="black" stroke-width="4" stroke-linecap="square" />
+          <path d="M2 36H42" stroke="black" stroke-width="4" stroke-linecap="square" />
+        </svg>
 
-</section>
+        <svg *ngIf="menuOpened" class="end" width="40" height="32" viewBox="0 0 40 32" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 15.8555L35.3209 2.99972" stroke="black" stroke-width="4" stroke-linecap="square" />
+          <path d="M4.67969 3.14258L35.3215 28.8541" stroke="black" stroke-width="4" stroke-linecap="square" />
+          <path d="M5 28.8555L20.3209 15.9997" stroke="black" stroke-width="4" stroke-linecap="square" />
+        </svg>
+
+      </div>
+    </div>
+
+
+
+
+  </section>
 </div>
 
 @if(menuOpened){
@@ -45,9 +50,11 @@
         </div>
         <div class="rightContent">
           <div class="socialLinks">
-            <a href="https://github.com/derens86" target="_blank"><img src="./../../../../assets/img/icon/github.png" alt=""></a>
+            <a href="https://github.com/derens86" target="_blank"><img src="./../../../../assets/img/icon/github.png"
+                alt=""></a>
             <a href="#contact" (click)="onCloseMenu()"><img src="./../../../../assets/img/icon/eMail.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/viktor-ens-ba69aa246" target="_blank"><img src="./../../../../assets/img/icon/linkedIn.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/viktor-ens-ba69aa246" target="_blank"><img
+                src="./../../../../assets/img/icon/linkedIn.png" alt=""></a>
           </div>
         </div>
       </div>

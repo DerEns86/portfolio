@@ -21,6 +21,6 @@ export class SkillsComponent {
     { name: 'Firebase', iconPath: 'firebase.png' },
     { name: 'Scrum', iconPath: 'scrum.png' },
     { name: 'Rest-API', iconPath: 'api.png' },
-    { name: 'Matiral Design', iconPath: 'material.png' },
+    { name: 'Material Design', iconPath: 'material.png' },
   ]
 }

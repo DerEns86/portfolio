@@ -9,16 +9,26 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
+
+
+
 export class HeaderComponent {
 
-  constructor(private translate: TranslateService){  }
+  currentLanguage: string;
+  
+  constructor(private translate: TranslateService){ 
+    this.currentLanguage = this.translate.currentLang;
+   }
 
-
+  
   menuOpened = false;
 
 
-  changeLanguage(language:string){
-    this.translate.use(language);
+  changeLanguage(){
+    const newLanguage = this.currentLanguage === 'en' ? 'de' : 'en';
+    this.translate.use(newLanguage);
+    this.currentLanguage = newLanguage;
+    console.log(this.translate.store.currentLang)
   }
 
 

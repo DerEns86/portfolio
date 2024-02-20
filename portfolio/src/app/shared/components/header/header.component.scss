@@ -20,6 +20,8 @@ section {
         width: 32px;
     }
     svg{
+        height: 40px;
+        width: 40px;
         cursor: pointer;
     }
 }
@@ -163,6 +165,29 @@ a{
     }
 }
 
+.buttonRight{
+    align-items: center;
+}
+
+.btnLanguage{
+    font-family: 'syne', sans-serif;
+    font-weight: 700;
+    color: $bg-color;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover{
+        color: $secondary-color;
+    }
+}
+
 @media screen and (max-width: 500px) {
  
     .contactContainer{
@@ -176,8 +201,24 @@ a{
 }
 
 @media screen and (max-width: 500px) {
+    section{
+        height: 70px;
+    }
+    .overlay {
+        top: 70px;
+    }
+    
     .rightContent{
         display: none;
+    }
+    svg{
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .btnLanguage{
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
     }
 }
 

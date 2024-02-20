@@ -64,6 +64,8 @@ h2 {
   position: relative;
   width: 100%;
   max-width: 620px;
+  filter: grayscale(1);
+  transition: filter 1s;
 
   img {
     width: 100%;
@@ -120,6 +122,9 @@ h2 {
   transform: rotate(0);
   scale: 1.1;
 
+}
+.wrapper:hover .projectImg{
+  filter: grayscale(0);
 }
 
 // .wrapper:hover .projectInfo,
