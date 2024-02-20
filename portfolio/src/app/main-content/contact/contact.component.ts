@@ -13,6 +13,8 @@ import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 export class ContactComponent {
  
 constructor(){}
+
+mailSubmitted = true;
  contactData = {
     name: '',
     email: '',
@@ -22,7 +24,6 @@ constructor(){}
   
 http = inject(HttpClient)
 
-  mailTest = true;
 
   post = {
     endPoint: 'https://v-ens.de/sendMail.php',
@@ -40,7 +41,7 @@ http = inject(HttpClient)
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            console.log(response)
+            this.mailSubmitted = true;
             ngForm.resetForm();
           },
           error: (error) => {

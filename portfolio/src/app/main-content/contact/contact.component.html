@@ -1,7 +1,7 @@
 <!-- <div class="seperator"></div> -->
 <div class="wrapper">
     <div class="section">
-
+        <!-- @if (!mailSubmitted) { -->
         <h1>Say hi!</h1>
         <h2>Want to discuss a new project</h2>
         <h3>Say hello! Let's discuss your ideas and make it happen</h3>
@@ -35,8 +35,13 @@
                         data as outlined</span>
                 </div>
                 <button [disabled]="!contactForm.valid" type="submit" class="sendMessage">Send message</button>
-
             </form>
+
         </div>
+    <!-- }@else {
+        <div class="test" data-aos="flip-up">
+            <p>Ihre mail wurde versandt</p>
+        </div>
+    } -->
     </div>
 </div>
