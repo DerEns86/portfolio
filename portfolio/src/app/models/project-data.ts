@@ -8,8 +8,8 @@ export function getProjects(): IProject[] {
       title: "Join",
       usedTech: ["JavaScript" ,"HTML", "CSS" ],
       description: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-      projectUrl: "",
-      gitUrl: "https://github.com/DerEns86/daNotes",
+      projectUrl: "https://portfolio.v-ens.de/html/index.html",
+      gitUrl: "https://github.com/DerEns86/Join",
       isHovered: false
     },
     {
@@ -18,8 +18,8 @@ export function getProjects(): IProject[] {
       title: "Pollo Loco",
       usedTech: ["JavaScript" ,"HTML", "CSS" ],
       description: "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-      projectUrl: "",
-      gitUrl: "https://github.com/DerEns86/daNotes",
+      projectUrl: "https://polloloco.v-ens.de/index.html",
+      gitUrl: "https://github.com/DerEns86/el_pollo_loco",
       isHovered: false
     },
     // {
