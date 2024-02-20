@@ -2,6 +2,9 @@
 <section>
   <a href=""><img id="logo" src="./../../../../assets/img/ve-logo.png" alt=""></a>
 
+  <button (click)="changeLanguage('de')">de</button>
+  <button (click)="changeLanguage('en')">en</button>
+
   <div (click)="ontoggleMenu()">
     <svg *ngIf="!menuOpened" class="start" width="44" height="38" viewBox="0 0 44 38" fill="none"
       xmlns="http://www.w3.org/2000/svg">
@@ -30,14 +33,14 @@
 <div class="overlay">
   <div class="wrapper d-flex">
     <div class="links">
-      <a href="#aboutMe"><span (click)="onCloseMenu()">About me</span></a>
-      <a href="#skills"><span (click)="onCloseMenu()">My skills</span></a>
+      <a href="#aboutMe"><span (click)="onCloseMenu()" translate>About me</span></a>
+      <a href="#skills"><span (click)="onCloseMenu()" translate>My skills</span></a>
       <a href="#projects"><span (click)="onCloseMenu()">Portfolio</span></a>
     </div>
     <div class="wrapperWidth" data-aos="fade-up">
       <div class="contactContainer d-flex">
         <div class="leftContent">
-          <h2>Say Hi!</h2>
+          <h2 translate>Say Hi!</h2>
           <p class="fontOverpass" (click)="onCloseMenu()"><a href="#contact">contact&#64;v-ens.de</a></p>
         </div>
         <div class="rightContent">
