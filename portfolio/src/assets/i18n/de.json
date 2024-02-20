@@ -12,7 +12,7 @@
     "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.":"Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
     "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.":"Jump & Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
     "Live Test":"Testen",
-    "Want to discuss a new project":"Sie haben ein neues Projekt?",
+    "Want to discuss a new project":"Sie haben eine Projektidee?",
     "Say hello! Let's discuss your ideas and make it happen": "Kontaktieren Sie mich und wir verwirklichen Ihre Idee",
     "Your Name": "Ihr Name",
     "Your email": "Ihre Email",
@@ -36,5 +36,7 @@
     "The presentation of this website in external frames is only permitted with written permission.":"Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.",
     "Special terms of use":"Besondere Nutzungsbedingungen",
     "Insofar as special conditions for individual uses of this website deviate from the aforementioned paragraphs, this will be expressly indicated at the appropriate point. In this case, the special terms of use apply in each individual case.": "Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Paragraphen abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen.",
-    "Source:":"Quelle:"
+    "Source:":"Quelle:",
+    "Thank you!": "Vielen Dank!",
+    "I received your messsage and will answer you soon!" : "Ich habe Ihre Nachricht erhalten und werde Ihnen bald antworten!"
 }

@@ -17,7 +17,7 @@ export class ContactComponent {
  
 constructor(){}
 
-mailSubmitted = true;
+mailSubmitted = false;
  contactData = {
     name: '',
     email: '',
