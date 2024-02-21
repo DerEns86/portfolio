@@ -13,7 +13,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-  title = 'portfolio';
+  title = 'Viktor Ens';
 
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('de'); // Setze die Standard-Sprache
@@ -24,13 +24,6 @@ export class AppComponent implements OnInit {
     return this.translate.store.currentLang
   }
 
-
-  @HostListener('window:resize', ['$event'])
-onResize(event: { target: { innerWidth: any; }; }) {
-  let width=event.target.innerWidth;
-  console.log(event.target.innerWidth);
-  return width;
-}
   ngOnInit(): void {
     AOS.init();
 

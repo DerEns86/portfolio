@@ -44,7 +44,7 @@ http = inject(HttpClient)
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            this.mailSubmitted = true;
+            this.toggleMessage()
             ngForm.resetForm();
           },
           error: (error) => {
@@ -55,6 +55,11 @@ http = inject(HttpClient)
     } 
   }
 
- 
+ toggleMessage(){
+  this.mailSubmitted = true;
+  setTimeout(() => {
+    this.mailSubmitted = false;
+  }, 2000);
+ }
 
 }

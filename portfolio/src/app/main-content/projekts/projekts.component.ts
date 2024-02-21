@@ -25,14 +25,13 @@ export class ProjektsComponent implements OnInit{
   ngOnInit(): void {
     this.projects = getProjects();
 
-    console.log(this.projects)
+   
   }
 
   
 
   onMouseEnter(index:number) {
     this.projects[index].isHovered = true;
-    console.log(this.projects[index].isHovered)
   }
 
   onMouseLeave(index:number) {

@@ -28,7 +28,6 @@ export class HeaderComponent {
     const newLanguage = this.currentLanguage === 'en' ? 'de' : 'en';
     this.translate.use(newLanguage);
     this.currentLanguage = newLanguage;
-    console.log(this.translate.store.currentLang)
   }
 
 
