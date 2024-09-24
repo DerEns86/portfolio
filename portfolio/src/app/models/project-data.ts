@@ -4,6 +4,26 @@ export function getProjects(): IProject[] {
   return [
     {
       id: 1,
+      imgUrl: "timeToQuit.png",
+      title: "Time-To-Quit",
+      usedTech: ["Java Spring Boot", "React", "MongoDB","OAuth"],
+      description: "This stop-smoking app tracks daily cigarette consumption and shows saved cigarettes and money. Additionally, users can add or delete personal motivations and goals with prices.",
+      projectUrl: "https://time-to-quit.onrender.com",
+      gitUrl: "https://github.com/DerEns86/time-to-quit",
+      isHovered: false
+    },
+    {
+      id: 2,
+      imgUrl: "pps_dashboard.png",
+      title: "PPS-Hub",
+      usedTech: ["Angular", "Firebase", "Google Auth"],
+      description: "A software designed to efficiently manage manufacturing processes in machining operations. It allows for the management of employees, machine assignments, and project planning.",
+      projectUrl: "https://pps.v-ens.de",
+      gitUrl: "https://github.com/DerEns86/pps-hub",
+      isHovered: false
+    },
+    {
+      id: 3,
       imgUrl: "join.png",
       title: "Join",
       usedTech: ["JavaScript" ,"HTML", "CSS" ],
@@ -13,7 +33,7 @@ export function getProjects(): IProject[] {
       isHovered: false
     },
     {
-      id: 2,
+      id: 4,
       imgUrl: "elPolloLoco.png",
       title: "Pollo Loco",
       usedTech: ["JavaScript" ,"HTML", "CSS" ],
