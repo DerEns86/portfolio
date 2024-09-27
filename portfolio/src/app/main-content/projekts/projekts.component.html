@@ -32,6 +32,9 @@
 
                     <div class="projectDescription fontOverpass">
                         <p translate>{{project.description}}</p>
+                        @if(project.caution !== null){
+                            <p translate class="caution-text">{{project.caution}}</p>
+                        }
                     </div>
                     <div class="fontOverpass d-flex btnContainer">
                         <div class="btn"><a href="{{project.projectUrl}}" target="_blank" translate>Live Test</a></div>

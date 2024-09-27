@@ -2,7 +2,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import AOS from 'aos';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -15,7 +15,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent implements OnInit {
   title = 'Viktor Ens';
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private http: HttpClient) {
     translate.setDefaultLang('de'); // Setze die Standard-Sprache
     translate.use('de'); // Aktiviere die Standard-Sprache
   }
@@ -26,7 +26,18 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init();
+    this.pingWebsite();
+  }
 
+  pingWebsite(): void {
+    this.http.get('https://time-to-quit.onrender.com').subscribe(
+      response => {
+        console.log('Ping successful', response);
+      },
+      error => {
+        console.error('Ping failed', error);
+      }
+    );
   }
 
 }

@@ -190,6 +190,10 @@ h2 {
   }
 }
 
+.caution-text {
+  color: #ff0000b2;
+}
+
 @media screen and (max-width: 1000px) {
   .wrapper {
     flex-direction: column !important;

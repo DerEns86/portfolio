@@ -4,6 +4,7 @@ export interface IProject {
     title:string;
     usedTech:string[];
     description:string;
+    caution: string | null,
     projectUrl:string;
     gitUrl:string;
     isHovered:boolean
