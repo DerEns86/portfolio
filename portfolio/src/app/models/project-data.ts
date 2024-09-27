@@ -8,7 +8,7 @@ export function getProjects(): IProject[] {
       title: "Time-To-Quit",
       usedTech: ["Java Spring Boot", "React", "MongoDB","OAuth"],
       description: "This stop-smoking app tracks daily cigarette consumption and shows saved cigarettes and money. Additionally, users can add or delete personal motivations and goals with prices.",
-      caution: "The page may take up to two minutes to load.",
+      caution: "The page may take up to two minutes to load!",
       projectUrl: "https://time-to-quit.onrender.com",
       gitUrl: "https://github.com/DerEns86/time-to-quit",
       isHovered: false
