@@ -30,14 +30,8 @@ export class AppComponent implements OnInit {
   }
 
   pingWebsite(): void {
-    this.http.get('https://time-to-quit.onrender.com').subscribe(
-      response => {
-        console.log('Ping successful', response);
-      },
-      error => {
-        console.error('Ping failed', error);
-      }
-    );
+    const img = new Image();
+    img.src = 'https://time-to-quit.onrender.com';
   }
 
 }
