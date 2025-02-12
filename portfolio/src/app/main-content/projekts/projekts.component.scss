@@ -1,9 +1,7 @@
-@import './../../../styles.scss';
-
-
+@import "./../../../styles.scss";
 
 section {
-  font-family: 'syne', sans-serif;
+  font-family: "syne", sans-serif;
   overflow: hidden;
   padding-inline: 5vw;
   padding-bottom: 20px;
@@ -34,7 +32,6 @@ h2 {
 .projectCard {
   position: relative;
   margin-top: 70px;
-
 }
 
 .number {
@@ -49,7 +46,6 @@ h2 {
   width: 100%;
 }
 
-
 .projectCard.reverse .wrapper {
   flex-direction: row-reverse;
 }
@@ -60,7 +56,6 @@ h2 {
 }
 
 .projectImg {
-
   position: relative;
   width: 100%;
   max-width: 620px;
@@ -71,8 +66,6 @@ h2 {
     width: 100%;
   }
 }
-
-
 
 .projectCard .projectImg::before {
   content: "";
@@ -95,8 +88,6 @@ h2 {
   opacity: 1;
 }
 
-
-
 .projectCard .projectImg::after {
   content: "";
   position: absolute;
@@ -114,28 +105,18 @@ h2 {
 
 .projectCard.reverse .projectImg::after {
   left: calc(-8%);
-
 }
 
 .wrapper:hover .projectImg::after {
   opacity: 1;
   transform: rotate(0);
   scale: 1.1;
-
 }
-.wrapper:hover .projectImg{
+.wrapper:hover .projectImg {
   filter: grayscale(0);
 }
 
-// .wrapper:hover .projectInfo,
-// .wrapper:focus .projectInfo,
-// .wrapper:active .projectInfo
-// {
-//   opacity: 1;
-// }
-
 .projectInfo {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,7 +144,6 @@ h2 {
       margin-block: 0;
     }
   }
-
 }
 
 .btn {
@@ -174,7 +154,7 @@ h2 {
   height: 60px;
   border: 4px solid black;
   font-size: 23px;
-  font-family: 'Overpass', sans-serif !important;
+  font-family: "Overpass", sans-serif !important;
   transition: transform 0.5s ease-in-out;
   margin-right: 40px;
 
@@ -186,7 +166,6 @@ h2 {
   &:hover {
     transform: scaleX(1.1);
     font-weight: 500;
-
   }
 }
 
@@ -197,7 +176,6 @@ h2 {
 @media screen and (max-width: 1000px) {
   .wrapper {
     flex-direction: column !important;
-
   }
 
   .projectCard.reverse .wrapper {
@@ -213,19 +191,18 @@ h2 {
   .reverse .btnContainer {
     justify-content: flex-end;
 
-    >:last-child {
+    > :last-child {
       margin-right: 0;
     }
   }
 }
 
 @media screen and (max-width: 900px) {
-
   [data-aos][data-aos][data-aos-delay="300"],
-  body[data-aos-delay="300"] [data-aos]{
+  body[data-aos-delay="300"] [data-aos] {
     transition-delay: 0s;
-  } 
-  
+  }
+
   .number {
     position: relative;
     padding-bottom: 20px;
@@ -240,11 +217,10 @@ h2 {
   .wrapper {
     gap: 10px;
   }
-
 }
 
 @media screen and (max-width: 500px) {
-  .projectCard{
+  .projectCard {
     margin-top: 35px;
   }
   .projectImg {
@@ -258,9 +234,8 @@ h2 {
   }
 }
 
-@media screen and  (min-width: 2200px){
-  .number{
-    top:-36px
+@media screen and (min-width: 2200px) {
+  .number {
+    top: -36px;
   }
-  
 }
