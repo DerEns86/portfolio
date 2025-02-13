@@ -1,0 +1,17 @@
+<section>
+  <h3>Meine WIPs und Experimente</h3>
+  <div style="margin-bottom: 40px">
+    @for (project of projects; track $index) {
+    <div class="project">
+      <div style="max-width: 700px">
+        <h4>{{ project.title }}</h4>
+        <p class="fontOverpass usedTech">{{ project.usedTech.join(" | ") }}</p>
+        <p class="descrition">{{ project.description }}</p>
+      </div>
+      <div class="btn">
+        <a href="{{ project.gitUrl }}" target="_blank">Github</a>
+      </div>
+    </div>
+    }
+  </div>
+</section>
