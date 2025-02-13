@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { getWipProjects } from '../../models/project-data';
+import { IProject } from '../../interfaces/project.interface';
 
 @Component({
   selector: 'app-playground',
   standalone: true,
   imports: [],
   templateUrl: './playground.component.html',
-  styleUrl: './playground.component.scss'
+  styleUrl: './playground.component.scss',
 })
-export class PlaygroundComponent {
+export class PlaygroundComponent implements OnInit {
+  projects: IProject[] = [];
 
+  ngOnInit(): void {
+    this.projects = getWipProjects();
+  }
 }

@@ -52,3 +52,70 @@ export function getProjects(): IProject[] {
     },
   ];
 }
+
+export function getWipProjects(): IProject[] {
+  return [
+    {
+      id: 1,
+      title: 'Join_Api',
+      usedTech: ['Java', 'JWT', 'Postgres', 'Spring Boot', 'Swagger'],
+      description:
+        'Eine API nach Vorlage von Join. Die API soll die Möglichkeit bieten, Aufgaben zu erstellen, zu bearbeiten und zu löschen. Auth wird mithilfe von JWT gewährleistet und gespeichert werden die Daten in einer Postgres-Datenbank.',
+      caution: null,
+      gitUrl: 'https://github.com/DerEns86/join_api',
+      isHovered: false,
+      imgUrl: '',
+      projectUrl: '',
+    },
+    {
+      id: 2,
+      title: 'Join_UI',
+      usedTech: ['Angular', 'Bootstrap', 'RXJS', 'SCSS', 'TypeScript'],
+      description:
+        'Join UI ist ein Kanban-Projektmanagement-Tool, das mit Angular erstellt wurde. Diese Anwendung hilft Teams, ihre Aufgaben und Projekte mithilfe der Kanban-Methodik effizient zu verwalten. Das Tool bietet Funktionen wie Aufgabenerstellung, Priorisierung und Nachverfolgung sowie eine reaktionsfähige Benutzeroberfläche.',
+      caution: null,
+      gitUrl: 'https://github.com/DerEns86/join_ui',
+      isHovered: false,
+      imgUrl: '',
+      projectUrl: '',
+    },
+    {
+      id: 3,
+      title: 'URL Shortener',
+      usedTech: [
+        'Java',
+        'Spring Boot',
+        'Postgres',
+        'Angular',
+        'TypeScript',
+        'Tailwind CSS',
+      ],
+      description:
+        'URL Shortener ist eine Full Stack Webanwendung, die es Benutzern ermöglicht, lange URLs in besser verwaltbare Links zu kürzen. Die Anwendung bietet außerdem Analysen zur Nutzung der verkürzten URLs.',
+      caution: null,
+      gitUrl: 'https://github.com/DerEns86/url-shortener',
+      isHovered: false,
+      imgUrl: '',
+      projectUrl: '',
+    },
+    {
+      id: 4,
+      title: 'Shop',
+      usedTech: [
+        'Angular',
+        'Bootstrap',
+        'RXJS',
+        'Signals',
+        'SCSS',
+        'TypeScript',
+      ],
+      description:
+        'Ein Angular Fake-Shop. Es dient als Beispielanwendung für die Verwendung von Angular-Funktionen wie signals, routing, services und HTTP-Client. Es nutzt die FakeStore-API als Datenquelle und unterstützt dynamische Routen, Filterung nach Kategorie und Verwaltung eines Warenkorbs.',
+      caution: null,
+      gitUrl: 'https://github.com/DerEns86/kalle-shop',
+      isHovered: false,
+      imgUrl: '',
+      projectUrl: '',
+    },
+  ];
+}
