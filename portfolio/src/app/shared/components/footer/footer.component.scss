@@ -1,77 +1,75 @@
-@import './../../../../styles.scss';
+@import "./../../../../styles.scss";
 
-.wrapper{
-    background-color: black;
+.wrapper {
+  background-color: black;
 }
 
 .section {
-    // background-color: black;
-    color: $bg-color;
-    justify-content: space-between;
-    // margin-top: -1px;
-    padding-inline: 5vw;
-    padding-bottom: 50px;
-    max-width: 1420px;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: -1px;
-    position: relative;
+  color: $bg-color;
+  justify-content: space-between;
+  padding-inline: 5vw;
+  padding-bottom: 50px;
+  max-width: 1420px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -1px;
+  position: relative;
 
-    .contentLeft {
-        // background-color: white;
+  .contentLeft {
+    padding-top: 10px;
 
-        >img {
-            width: 40px;
-            filter: brightness(300%);
-        }
+    > img {
+      width: 40px;
+      filter: brightness(300%);
     }
+  }
 
-    .legalNotice {
-        padding-top: 8px;
-        text-align: end;
+  .legalNotice {
+    padding-top: 8px;
+    text-align: end;
 
-        a{
-            text-decoration: none;
-            color: $bg-color;
-        }
+    a {
+      text-decoration: none;
+      color: $bg-color;
     }
+  }
 }
 
-.arrowUp{
-    position: absolute;
-    bottom: 150px;
-    right: 5vw;
-    width: 40px;
-    height: 56px;
-    transition: transform 0.1s linear;
-    cursor: pointer;
+.arrowUp {
+  position: absolute;
+  bottom: 150px;
+  right: 5vw;
+  width: 40px;
+  height: 56px;
+  transition: transform 0.1s linear;
+  cursor: pointer;
 
-    &:hover{
-        transform: scale(1.3);
-    }
+  &:hover {
+    transform: scale(1.3);
+  }
 }
 
 @media screen and (max-width: 500px) {
-    section {
-        flex-direction: column;
-        align-items: center;
+  section {
+    flex-direction: column;
+    align-items: center;
 
-        .contentLeft {
-            position: relative;
-        }
-
-        .contentRight {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-
-            .socialIcons {
-                gap: 10px;
-            }
-        }
+    .contentLeft {
+      position: relative;
     }
-    .arrowUp{
-        display: none;
+
+    .contentRight {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+
+      .socialIcons {
+        gap: 10px;
+      }
     }
+  }
+  .arrowUp {
+    display: none;
+  }
 }
