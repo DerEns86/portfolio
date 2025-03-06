@@ -1,0 +1,14 @@
+section {
+  min-height: calc(100vh - 235px);
+  font-family: "syne", sans-serif;
+  //   display: flex;
+  //   align-items: center;
+  //   flex-direction: column;
+  padding-inline: 5vw;
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    min-height: calc(100vh - 205px);
+  }
+}
