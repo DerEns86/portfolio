@@ -8,8 +8,18 @@
         <p class="fontOverpass usedTech">{{ project.usedTech.join(" | ") }}</p>
         <p class="descrition">{{ project.description }}</p>
       </div>
-      <div class="btn">
-        <a href="{{ project.gitUrl }}" target="_blank">Github</a>
+
+      <div class="fontOverpass d-flex btnContainer">
+        <div class="btn">
+          <a href="{{ project.gitUrl }}" target="_blank">Github</a>
+        </div>
+        @if (project.projectUrl !== '') {
+        <div class="btn">
+          <a href="{{ project.projectUrl }}" target="_blank" translate
+            >Live Test</a
+          >
+        </div>
+        }
       </div>
     </div>
     }

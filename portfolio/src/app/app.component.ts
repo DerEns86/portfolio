@@ -35,10 +35,16 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     AOS.init();
     this.pingWebsite();
+    this.pingJoin();
   }
 
   pingWebsite(): void {
     const img = new Image();
     img.src = 'https://time-to-quit.onrender.com';
+  }
+
+  pingJoin(): void {
+    const img = new Image();
+    img.src = 'https://join-api-q9lx.onrender.com';
   }
 }

@@ -13,7 +13,7 @@
   >
     <div class="projectCard" [ngClass]="{ reverse: odd, normal: even }">
       <div class="number" [ngClass]="{ end: even }">
-        <span>0{{ project.id }}/ 0{{ projects.length }}</span>
+        <span>0{{ index + 1 }}/ 0{{ projects.length }}</span>
       </div>
 
       <div class="wrapper">

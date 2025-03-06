@@ -1,3 +1,51 @@
 <section>
-  <p>join works!</p>
+  <h3>Mein Join Full Stack Projekt</h3>
+
+  <div class="mt-36">
+    <h4>{{ projects[0].title }}</h4>
+    <p class="fontOverpass usedTech">{{ projects[0].usedTech.join(" | ") }}</p>
+    <p class="descrition">{{ projects[0].description }}</p>
+
+    <div class="wrapper">
+      <div class="projectImg">
+        <img src="../../../assets/img/projectImg/swagger.png" alt="" />
+      </div>
+      <div class="fontOverpass d-flex btnContainer">
+        <div class="btn">
+          <a href="{{ projects[0].gitUrl }}" target="_blank">Github</a>
+        </div>
+        @if (projects[0].projectUrl !== '') {
+        <div class="btn">
+          <a href="{{ projects[0].projectUrl }}" target="_blank" translate
+            >Testen</a
+          >
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+  <div class="mt-36">
+    <h4>{{ projects[1].title }}</h4>
+    <p class="fontOverpass usedTech">{{ projects[1].usedTech.join(" | ") }}</p>
+    <p class="descrition">{{ projects[1].description }}</p>
+    <p translate class="caution-text">{{ projects[1].caution }}</p>
+
+    <div class="wrapper">
+      <div class="projectImg">
+        <img src="../../../assets/img/projectImg/join.png" alt="" />
+      </div>
+      <div class="fontOverpass d-flex btnContainer">
+        <div class="btn">
+          <a href="{{ projects[1].gitUrl }}" target="_blank">Github</a>
+        </div>
+        @if (projects[1].projectUrl !== '') {
+        <div class="btn btn-mobile">
+          <a href="{{ projects[1].projectUrl }}" target="_blank" translate
+            >Testen</a
+          >
+        </div>
+        }
+      </div>
+    </div>
+  </div>
 </section>
