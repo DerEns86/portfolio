@@ -38,11 +38,22 @@
             }
           </div>
           <div class="fontOverpass d-flex btnContainer">
+            @if(project.id ===3){
+            <div
+              class="btn"
+              [routerLink]="['/join']"
+              style="cursor: pointer"
+              translate
+            >
+              Live Test
+            </div>
+            }@else{
             <div class="btn">
               <a href="{{ project.projectUrl }}" target="_blank" translate
                 >Live Test</a
               >
             </div>
+            }
             <div class="btn">
               <a href="{{ project.gitUrl }}" target="_blank">Github</a>
             </div>
