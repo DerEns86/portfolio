@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
   ping() {
     this.http.get('https://time-to-quit.onrender.com/api/content').subscribe({
       next: (response) => console.log('Time to quit response:', response),
-      error: (error) => console.error(error),
+      error: () => console.warn('Fetching failed! But the website is up!'),
     });
   }
 
@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
       .get('https://join-api-q9lx.onrender.com/swagger-ui/index.html')
       .subscribe({
         next: (response) => console.log('Join response:', response),
-        error: (error) => console.error(error),
+        error: () => console.warn('Fetching failed! But the website is up!'),
       });
   }
 }

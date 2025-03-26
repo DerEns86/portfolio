@@ -20,10 +20,12 @@ export function getProjects(): IProject[] {
       description:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions.',
       caution: 'The page may take up to two minutes to load!',
-      projectUrl: 'http://localhost:4200/join',
-      // projectUrl: 'https://v-ens.de/join',
+      // projectUrl: 'http://localhost:4200/join',
+      projectUrl: 'https://v-ens.de/join',
       gitUrl: 'https://github.com/DerEns86/Join',
       isHovered: false,
+      seperateView: true,
+      seperateViewPath: '/join',
     },
     {
       id: 1,
@@ -49,26 +51,13 @@ export function getProjects(): IProject[] {
       gitUrl: 'https://github.com/DerEns86/pps-hub',
       isHovered: false,
     },
-
-    {
-      id: 4,
-      imgUrl: 'elPolloLoco.png',
-      title: 'Pollo Loco',
-      usedTech: ['JavaScript', 'HTML', 'CSS'],
-      description:
-        'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
-      caution: null,
-      projectUrl: 'https://polloloco.v-ens.de/index.html',
-      gitUrl: 'https://github.com/DerEns86/el_pollo_loco',
-      isHovered: false,
-    },
   ];
 }
 
 export function getWipProjects(): IProject[] {
   return [
     {
-      id: 3,
+      id: 1,
       imgUrl: 'join.png',
       title: 'Join',
       usedTech: ['JavaScript', 'HTML', 'CSS'],
@@ -81,7 +70,7 @@ export function getWipProjects(): IProject[] {
       isHovered: false,
     },
     {
-      id: 3,
+      id: 2,
       title: 'URL Shortener',
       usedTech: [
         'Java',
@@ -96,11 +85,11 @@ export function getWipProjects(): IProject[] {
       caution: null,
       gitUrl: 'https://github.com/DerEns86/url-shortener',
       isHovered: false,
-      imgUrl: '',
+      imgUrl: 'shortener.png',
       projectUrl: '',
     },
     {
-      id: 4,
+      id: 3,
       title: 'Shop',
       usedTech: [
         'Angular',
@@ -115,8 +104,20 @@ export function getWipProjects(): IProject[] {
       caution: null,
       gitUrl: 'https://github.com/DerEns86/kalle-shop',
       isHovered: false,
-      imgUrl: '',
+      imgUrl: 'shop.png',
       projectUrl: '',
+    },
+    {
+      id: 4,
+      imgUrl: 'elPolloLoco.png',
+      title: 'Pollo Loco',
+      usedTech: ['JavaScript', 'HTML', 'CSS'],
+      description:
+        'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+      caution: null,
+      projectUrl: 'https://polloloco.v-ens.de/index.html',
+      gitUrl: 'https://github.com/DerEns86/el_pollo_loco',
+      isHovered: false,
     },
   ];
 }

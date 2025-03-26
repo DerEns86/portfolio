@@ -1,8 +1,9 @@
 <section>
   <h3>Meine WIPs und Experimente</h3>
-  <div style="margin-bottom: 40px">
-    @for (project of projects; track $index) {
-    <div class="project">
+  <div style="margin-bottom: 100px">
+    @for (project of projects; track project.id; let index = $index, odd = $odd,
+    even = $even) {
+    <!-- <div class="project">
       <div style="max-width: 700px">
         <h4>{{ project.title }}</h4>
         <p class="fontOverpass usedTech">{{ project.usedTech.join(" | ") }}</p>
@@ -21,7 +22,15 @@
         </div>
         }
       </div>
-    </div>
+    </div> -->
+
+    <app-project-card
+      [project]="project"
+      [projects]="projects"
+      [index]="index"
+      [odd]="odd"
+      [even]="even"
+    ></app-project-card>
     }
   </div>
 </section>

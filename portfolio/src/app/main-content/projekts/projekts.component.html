@@ -4,7 +4,7 @@
 
   @for (project of projects; track project.id; let index = $index, odd = $odd,
   even = $even) {
-  <div
+  <!-- <div
     class="projectWrapper"
     id="project{{ index }}"
     [ngClass]="{ isHovered: project.isHovered }"
@@ -61,7 +61,16 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
+  <app-project-card
+    [project]="project"
+    [projects]="projects"
+    [index]="index"
+    [odd]="odd"
+    [even]="even"
+  ></app-project-card>
+
   }
 
   <div
