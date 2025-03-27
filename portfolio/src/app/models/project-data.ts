@@ -3,6 +3,18 @@ import { IProject } from '../interfaces/project.interface';
 export function getProjects(): IProject[] {
   return [
     {
+      id: 4,
+      imgUrl: 'famNotify.gif',
+      title: 'FamNotify',
+      usedTech: ['Vue.js', 'Express', 'Socket.io', 'Tailwind CSS'],
+      description:
+        'FamNotify ist ein Echtzeit-Benachrichtigungssystem für Familien. Eltern senden Erinnerungen als Emojis oder GIFs, die Kinder mit einem Klick bestätigen können. Dank Express, Vue.js und Socket.IO erfolgt die Übertragung verzögerungsfrei – ideal für kurze Mitteilungen im Familienalltag.',
+      caution: null,
+      projectUrl: '',
+      gitUrl: 'https://github.com/DerEns86/FamNotify',
+      isHovered: false,
+    },
+    {
       id: 3,
       imgUrl: 'join.png',
       title: 'Join Full Stack',
