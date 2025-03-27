@@ -8,7 +8,7 @@ export function getProjects(): IProject[] {
       title: 'FamNotify',
       usedTech: ['Vue.js', 'Express', 'Socket.io', 'Tailwind CSS'],
       description:
-        'FamNotify ist ein Echtzeit-Benachrichtigungssystem für Familien. Eltern senden Erinnerungen als Emojis oder GIFs, die Kinder mit einem Klick bestätigen können. Dank Express, Vue.js und Socket.IO erfolgt die Übertragung verzögerungsfrei – ideal für kurze Mitteilungen im Familienalltag.',
+        'FamNotify is a real-time notification system for families. Parents send reminders as emojis or GIFs, which children can acknowledge with a click. Thanks to Express, Vue.js, and Socket.IO, the transmission is instantaneous—ideal for short messages in everyday family life.',
       caution: null,
       projectUrl: '',
       gitUrl: 'https://github.com/DerEns86/FamNotify',
@@ -68,19 +68,19 @@ export function getProjects(): IProject[] {
 
 export function getWipProjects(): IProject[] {
   return [
-    {
-      id: 1,
-      imgUrl: 'join.png',
-      title: 'Join',
-      usedTech: ['JavaScript', 'HTML', 'CSS'],
-      description:
-        'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen.',
-      caution: null,
-      projectUrl: 'https://portfolio.v-ens.de/html/index.html',
-      // projectUrl: '',
-      gitUrl: 'https://github.com/DerEns86/Join',
-      isHovered: false,
-    },
+    // {
+    //   id: 1,
+    //   imgUrl: 'join.png',
+    //   title: 'Join',
+    //   usedTech: ['JavaScript', 'HTML', 'CSS'],
+    //   description:
+    //     'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen.',
+    //   caution: null,
+    //   projectUrl: 'https://portfolio.v-ens.de/html/index.html',
+    //   // projectUrl: '',
+    //   gitUrl: 'https://github.com/DerEns86/Join',
+    //   isHovered: false,
+    // },
     {
       id: 2,
       title: 'URL Shortener',
@@ -93,7 +93,7 @@ export function getWipProjects(): IProject[] {
         'Tailwind CSS',
       ],
       description:
-        'URL Shortener ist eine Full Stack Webanwendung, die es Benutzern ermöglicht, lange URLs in besser verwaltbare Links zu kürzen. Die Anwendung bietet außerdem Analysen zur Nutzung der verkürzten URLs.',
+        'URL Shortener is a full-stack web application that allows users to shorten long URLs into more manageable links. The application also provides analytics on the usage of the shortened URLs.',
       caution: null,
       gitUrl: 'https://github.com/DerEns86/url-shortener',
       isHovered: false,
@@ -112,7 +112,7 @@ export function getWipProjects(): IProject[] {
         'TypeScript',
       ],
       description:
-        'Ein Angular Fake-Shop. Es dient als Beispielanwendung für die Verwendung von Angular-Funktionen wie signals, routing, services und HTTP-Client. Es nutzt die FakeStore-API als Datenquelle und unterstützt dynamische Routen, Filterung nach Kategorie und Verwaltung eines Warenkorbs.',
+        'An Angular fake store. It serves as a sample application for using Angular features such as signals, routing, services, and HTTP client. It uses the FakeStore API as a data source and supports dynamic routing, category filtering, and shopping cart management.',
       caution: null,
       gitUrl: 'https://github.com/DerEns86/kalle-shop',
       isHovered: false,
