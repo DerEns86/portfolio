@@ -1,93 +1,93 @@
-@import './../../../styles.scss';
+@import "./../../../styles.scss";
 
 section {
-    font-family: 'syne', sans-serif;
-    padding-inline: 5vw;
+  font-family: "syne", sans-serif;
+  padding-inline: 5vw;
 
-    .headline {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%) !important;
-        top: 4vw;
-        z-index: 2;
-        padding: 0 12px;
+  .headline {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    top: 4vw;
+    z-index: 2;
+    padding: 0 12px;
 
-        display: block;
-        width: fit-content;
-        text-align: center;
+    display: block;
+    width: fit-content;
+    text-align: center;
 
-        font-size: clamp(32px, 8vw, 128px);
-        font-weight: 900;
+    font-size: clamp(32px, 8vw, 128px);
+    font-weight: 900;
 
-        background-color: $bg-color;
-    }
+    background-color: $bg-color;
+  }
 
-    .cardsContent {
-        border: 2px solid black;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding: clamp(25px, 5vw, 200px);;
-        // column-gap: 100px;
-        column-gap: clamp(25px, 5vw, 120px);
-        row-gap: clamp(25px, 5vw, 120px);
-    }
+  .cardsContent {
+    border: 2px solid black;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: clamp(25px, 5vw, 200px);
+    column-gap: clamp(25px, 5vw, 120px);
+    row-gap: clamp(25px, 5vw, 120px);
+  }
 
-    .skillcard {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-        width: 100px;
-        overflow: hidden;
-        text-align: center;
-        font-weight: bold;
+  .skillcard {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100px;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
 
-        img {
-            height: 75px;
-            transition: all 1s ease-out;
-
-        }
-
-        &:hover {
-            color: $secondary-color;
-        }
-
-        &:hover img{
-            animation: slideInOut 2s ;
-        }
+    img {
+      height: 75px;
+      transition: all 1s ease-in-out;
     }
 
     &:hover {
-        .headline{
-        color: $secondary-color;
-        }
+      color: $secondary-color;
     }
+
+    &:hover img {
+      animation: slideInOut 1s;
+    }
+  }
+
+  &:hover {
+    .headline {
+      color: $secondary-color;
+    }
+  }
 }
 
 @keyframes slideInOut {
-    0% {
-        transform: translateX(0); 
-    }
-    25% {
-        transform: translateX(-100%); 
-    }
-    50% {
-        transform: translateX(100%); 
-    }
-    100% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(110%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 700px) {
-   
-    .cardsContent{
-        padding: 10vw 2vw !important;
-    }
+  .cardsContent {
+    padding: 10vw 2vw !important;
+  }
 
-    .skillcard {
-
-        img{
-            height: 60px !important;
-        }
+  .skillcard {
+    img {
+      height: 60px !important;
     }
+  }
 }

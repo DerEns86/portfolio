@@ -4,7 +4,7 @@
 
   @for (project of projects; track project.id; let index = $index, odd = $odd,
   even = $even) {
-  <div
+  <!-- <div
     class="projectWrapper"
     id="project{{ index }}"
     [ngClass]="{ isHovered: project.isHovered }"
@@ -13,7 +13,7 @@
   >
     <div class="projectCard" [ngClass]="{ reverse: odd, normal: even }">
       <div class="number" [ngClass]="{ end: even }">
-        <span>0{{ project.id }}/ 0{{ projects.length }}</span>
+        <span>0{{ index + 1 }}/ 0{{ projects.length }}</span>
       </div>
 
       <div class="wrapper">
@@ -38,11 +38,22 @@
             }
           </div>
           <div class="fontOverpass d-flex btnContainer">
+            @if(project.id ===3){
+            <div
+              class="btn"
+              [routerLink]="['/join']"
+              style="cursor: pointer"
+              translate
+            >
+              Live Test
+            </div>
+            }@else{
             <div class="btn">
               <a href="{{ project.projectUrl }}" target="_blank" translate
                 >Live Test</a
               >
             </div>
+            }
             <div class="btn">
               <a href="{{ project.gitUrl }}" target="_blank">Github</a>
             </div>
@@ -50,7 +61,16 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
+  <app-project-card
+    [project]="project"
+    [projects]="projects"
+    [index]="index"
+    [odd]="odd"
+    [even]="even"
+  ></app-project-card>
+
   }
 
   <div
@@ -59,12 +79,13 @@
   >
     <div class="projectInfo" data-aos-delay="300" data-aos="fade-left">
       <h3>Playground</h3>
-      <p class="fontOverpass">
-        Entdecken Sie auch meine weiteren Projekte, in denen ich verschiedene
-        Technologien und Ansätze kombiniere, um meine Kenntnisse und Fähigkeiten
-        zu erweitern.
+      <p class="fontOverpass" translate>
+        Discover my other projects, in which I combine different technologies
+        and approaches to expand my knowledge and skills.
       </p>
-      <div class="btn" [routerLink]="['/playground']">Playground</div>
+      <div class="btn" [routerLink]="['/playground']" style="cursor: pointer">
+        Playground
+      </div>
     </div>
   </div>
 </section>

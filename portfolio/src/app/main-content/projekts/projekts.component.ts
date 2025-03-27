@@ -4,11 +4,12 @@ import { IProject } from '../../interfaces/project.interface';
 import { getProjects } from '../../models/project-data';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 @Component({
   selector: 'app-projekts',
   standalone: true,
-  imports: [CommonModule, TranslateModule, RouterLink],
+  imports: [CommonModule, TranslateModule, RouterLink, ProjectCardComponent],
   templateUrl: './projekts.component.html',
   styleUrl: './projekts.component.scss',
 })

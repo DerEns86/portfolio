@@ -34,11 +34,25 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init();
-    this.pingWebsite();
+    // this.pingWebsite();
+    // this.pingJoin();
+    this.ping();
+    this.pingJoin();
   }
 
-  pingWebsite(): void {
-    const img = new Image();
-    img.src = 'https://time-to-quit.onrender.com';
+  ping() {
+    this.http.get('https://time-to-quit.onrender.com/api/content').subscribe({
+      next: (response) => console.log('Time to quit response:', response),
+      error: () => console.warn('Fetching failed! But the website is up!'),
+    });
+  }
+
+  pingJoin() {
+    this.http
+      .get('https://join-api-q9lx.onrender.com/swagger-ui/index.html')
+      .subscribe({
+        next: (response) => console.log('Join response:', response),
+        error: () => console.warn('Fetching failed! But the website is up!'),
+      });
   }
 }
