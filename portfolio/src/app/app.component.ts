@@ -49,7 +49,7 @@ export class AppComponent implements OnInit {
 
   pingJoin() {
     this.http
-      .get('https://join-api-q9lx.onrender.com/swagger-ui/index.html')
+      .get('https://join-api-q9lx.onrender.com/api/public/wakeup')
       .subscribe({
         next: (response) => console.log('Join response:', response),
         error: () => console.warn('Fetching failed! But the website is up!'),
