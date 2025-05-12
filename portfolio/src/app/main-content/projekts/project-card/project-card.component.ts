@@ -12,18 +12,17 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class ProjectCardComponent {
   @Input() project: any;
-  @Input() projects: any;
   @Input() index!: number;
   @Input() odd!: boolean;
   @Input() even!: boolean;
 
   baseImgUrl = './../../../../assets/img/projectImg/';
 
-  onMouseEnter(index: number) {
-    this.projects[index].isHovered = true;
-  }
+  // onMouseEnter(index: number) {
+  //   this.projects[index].isHovered = true;
+  // }
 
-  onMouseLeave(index: number) {
-    this.projects[index].isHovered = false;
-  }
+  // onMouseLeave(index: number) {
+  //   this.projects[index].isHovered = false;
+  // }
 }

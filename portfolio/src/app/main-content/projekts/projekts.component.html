@@ -1,96 +1,26 @@
 <section>
-  <h1 data-aos="zoom-in">Portfolio</h1>
-  <h2 class="fontOverpass" translate>Feel free</h2>
+  <!-- <h1 data-aos="zoom-in">Portfolio</h1> -->
+  <!-- <h2 class="fontOverpass" translate>Feel free</h2> -->
 
-  @for (project of projects; track project.id; let index = $index, odd = $odd,
-  even = $even) {
-  <!-- <div
-    class="projectWrapper"
-    id="project{{ index }}"
-    [ngClass]="{ isHovered: project.isHovered }"
-    (mouseenter)="onMouseEnter(index)"
-    (mouseleave)="onMouseLeave(index)"
-  >
-    <div class="projectCard" [ngClass]="{ reverse: odd, normal: even }">
-      <div class="number" [ngClass]="{ end: even }">
-        <span>0{{ index + 1 }}/ 0{{ projects.length }}</span>
-      </div>
-
-      <div class="wrapper">
-        <div class="projectImg">
-          <img src="{{ baseImgUrl }}{{ project.imgUrl }}" alt="" />
-        </div>
-
-        <div
-          class="projectInfo"
-          data-aos-delay="300"
-          [attr.data-aos]="odd ? 'fade-right' : 'fade-left'"
-        >
-          <div>
-            <h3>{{ project.title }}</h3>
-            <p class="fontOverpass">{{ project.usedTech.join(" | ") }}</p>
-          </div>
-
-          <div class="projectDescription fontOverpass">
-            <p translate>{{ project.description }}</p>
-            @if(project.caution !== null){
-            <p translate class="caution-text">{{ project.caution }}</p>
-            }
-          </div>
-          <div class="fontOverpass d-flex btnContainer">
-            @if(project.id ===3){
-            <div
-              class="btn"
-              [routerLink]="['/join']"
-              style="cursor: pointer"
-              translate
-            >
-              Live Test
-            </div>
-            }@else{
-            <div class="btn">
-              <a href="{{ project.projectUrl }}" target="_blank" translate
-                >Live Test</a
-              >
-            </div>
-            }
-            <div class="btn">
-              <a href="{{ project.gitUrl }}" target="_blank">Github</a>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="projects-header">
+    <div class="title-container">
+      <h2><span class="hashtag">#</span><span class="title">projects</span></h2>
+      <div class="line"></div>
     </div>
-  </div> -->
+    <a href="#" class="view-all">View all ⟶⟶⟶</a>
+  </div>
 
-  <app-project-card
-    [project]="project"
-    [projects]="projects"
-    [index]="index"
-    [odd]="odd"
-    [even]="even"
-  ></app-project-card>
+  <div class="projects-grid">
+    @for (project of projects; track project.id; let index = $index, odd = $odd,
+    even = $even) {
 
-  }
+    <app-project-card
+      [project]="project"
+      [index]="index"
+      [odd]="odd"
+      [even]="even"
+    ></app-project-card>
 
-  <div
-    class="projectCard wrapper"
-    style="display: flex; flex-direction: row-reverse"
-  >
-    <div class="projectInfo" data-aos-delay="300" data-aos="fade-left">
-      <h3>Playground</h3>
-      <p class="fontOverpass" translate>
-        Discover my other projects, in which I combine different technologies
-        and approaches to expand my knowledge and skills.
-      </p>
-      <div class="btn" [routerLink]="['/playground']" style="cursor: pointer">
-        Playground
-      </div>
-    </div>
+    }
   </div>
 </section>
-<div class="seperatorWrapper" data-aos="zoom-in">
-  <div class="seperatorArrow">
-    <img src="./../../../assets/img/icon/arrowStatic.png" alt="" />
-  </div>
-</div>

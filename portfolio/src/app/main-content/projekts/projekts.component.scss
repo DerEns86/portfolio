@@ -1,25 +1,64 @@
 @import "./../../../styles.scss";
 
 section {
-  font-family: "syne", sans-serif;
   overflow: hidden;
   padding-inline: 5vw;
   padding-bottom: 20px;
 }
 
-h1 {
-  font-size: clamp(32px, 8vw, 78px);
-  text-align: center;
-  font-weight: 800;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
 
-  &:hover {
-    color: $secondary-color;
+  @media (min-width: 1300px) {
+    grid-template-columns: repeat(3, 1fr); // exakt 3 Spalten ab Desktopgröße
   }
 }
 
-h2 {
-  font-size: 23px;
-  text-align: center;
+.projects-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2a2c36; // dunkler Hintergrund
+  padding: 1rem;
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    .hashtag {
+      color: #5a7dff;
+      font-weight: bold;
+      margin-right: 0.25rem;
+    }
+
+    .title {
+      color: white;
+      margin-right: 1rem;
+    }
+
+    .line {
+      height: 1px;
+      background-color: #5a7dff;
+      flex-grow: 1;
+      margin-top: 3px;
+    }
+  }
+
+  .view-all {
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+
+    margin-left: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .wrapper {

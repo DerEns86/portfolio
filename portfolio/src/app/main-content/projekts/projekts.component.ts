@@ -21,7 +21,11 @@ export class ProjektsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.projects = getProjects();
+    this.projects = this.getMainProjects();
+  }
+
+  getMainProjects() {
+    return [getProjects()[1], getProjects()[3], getProjects()[2]];
   }
 
   onMouseEnter(index: number) {
