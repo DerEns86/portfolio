@@ -1,0 +1,10 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+
+  @media (min-width: 1300px) {
+    grid-template-columns: repeat(3, 1fr); // exakt 3 Spalten ab Desktopgröße
+  }
+}
