@@ -1,224 +1,216 @@
-@import './../../../../styles.scss';
+@import "./../../../../styles.scss";
 
 section {
-    background-color: $bg-color;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    padding-inline: 5vw;
+  background-color: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding-inline: 5vw;
 
-   
+  #logo {
+    width: 48px;
+    margin: 6px;
+  }
 
-    #logo {
-        width: 48px;
-        margin: 6px;
+  #menu {
+    width: 32px;
+  }
+  svg {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
 
+    path {
+      stroke: $secondary !important;
     }
-
-    #menu {
-        width: 32px;
-    }
-    svg{
-        height: 40px;
-        width: 40px;
-        cursor: pointer;
-    }
+  }
 }
 
-.width{
-    background-color: $bg-color;
-    position: sticky;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 10;
+.width {
+  background-color: $bg-color;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
 }
 
 .overlay {
-    position: fixed;
-    left: 0;
-    right: 0;
-    width: 100%;
-    top: 100px;
-    height: 100vh;
-    background-color: $bg-color;
-    z-index: 99;
-
-
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 100px;
+  height: 100vh;
+  background-color: $bg-color;
+  z-index: 99;
 }
 
 .wrapper {
-    height: 100%;
-    margin-inline: 5vw;
-    flex-direction: column;
-    // max-width: 1920px;
-    margin: 0 auto;
-    // padding-inline: 5vw;
-    font-family: 'syne', sans-serif;
+  height: 100%;
+  margin-inline: 5vw;
+  flex-direction: column;
+  // max-width: 1920px;
+  margin: 0 auto;
+  // padding-inline: 5vw;
+  font-family: "syne", sans-serif;
 }
 
 .links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1420px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1420px;
+  margin: 0 auto;
 
-    // max-height: 400px;
-    // height: 100%;
-    height: calc(100% - 350px);
-    
+  // max-height: 400px;
+  // height: 100%;
+  height: calc(100% - 350px);
 
-    font-size: clamp(45px, 8vw, 96px);
-    font-weight: 700;
+  font-size: clamp(45px, 8vw, 96px);
+  font-weight: 700;
 
-    letter-spacing: -0.025em;
-    text-align: center;
-    gap: 20px;
-    padding-bottom: 25px;
+  letter-spacing: -0.025em;
+  text-align: center;
+  gap: 20px;
+  padding-bottom: 25px;
 
-    a {
-        text-decoration: none;
-        color: black;
-        position: relative;
+  a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+  }
+
+  span::after {
+    content: "";
+    position: absolute;
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    bottom: 0;
+    left: -10px;
+    width: 10px;
+    height: 20px;
+  }
+
+  span::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 4px;
+    background-color: black;
+    transition: all 0.3s ease;
+    //   transform: translateX(-50%);
+  }
+
+  a:hover,
+  a:active {
+    span::before {
+      left: 50%;
+      width: 50%;
     }
 
     span::after {
-        content: '';
-        position: absolute;
-        border-left: 4px solid black;
-        border-bottom: 4px solid black;
-        bottom: 0;
-        left: -10px;
-        width: 10px;
-        height: 20px;
+      opacity: 0;
     }
-
-    span::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 10px;
-        height: 4px;
-        background-color: black;
-        transition: all 0.3s ease;
-        //   transform: translateX(-50%);
-    }
-
-    a:hover,
-    a:active {
-        span::before {
-            left: 50%;
-            width: 50%;
-        }
-
-        span::after {
-            opacity: 0;
-        }
-    }
+  }
 }
 
-a{
-    text-decoration: none;
-    color: $bg-color;
+a {
+  text-decoration: none;
+  color: $bg-color;
 }
-
 
 .contactContainer {
-    
-    color: $bg-color;
-    // max-height: 400px;
-    
-    justify-content: space-between;
-    padding-inline: 5vw;
-    align-items: end;
-    padding-top: 1vh;
-    padding-bottom: 30px;
-    margin-top: -25px;
-   max-width: 1420px;
-   margin: 0 auto;
-   height: 250px;
+  color: $bg-color;
+  // max-height: 400px;
 
-
+  justify-content: space-between;
+  padding-inline: 5vw;
+  align-items: end;
+  padding-top: 1vh;
+  padding-bottom: 30px;
+  margin-top: -25px;
+  max-width: 1420px;
+  margin: 0 auto;
+  height: 250px;
 }
 
-.wrapperWidth{
-    width: 100%;
-    clip-path: polygon(0% 0%, 100% 40%, 100% 100%, 0% 100%);
-    background-color: black;
-    // flex: 1;
+.wrapperWidth {
+  width: 100%;
+  clip-path: polygon(0% 0%, 100% 40%, 100% 100%, 0% 100%);
+  background-color: black;
+  // flex: 1;
 }
 
-.leftContent{
-    
-    p {
-        margin-block-end: 0;
-        margin-block-start: 0;
-        font-size: 23px;
-    }
-    h2{
-        font-size: clamp(45px, 8vw, 78px);
-        color: $secondary-color;
-        margin-block-end: 0;
-    }
+.leftContent {
+  p {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-size: 23px;
+  }
+  h2 {
+    font-size: clamp(45px, 8vw, 78px);
+    color: $secondary-color;
+    margin-block-end: 0;
+  }
 }
 
-.buttonRight{
-    align-items: center;
+.buttonRight {
+  align-items: center;
 }
 
-.btnLanguage{
-    font-family: 'syne', sans-serif;
-    font-weight: 700;
-    color: $bg-color;
-    background-color: black;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+.btnLanguage {
+  font-family: "syne", sans-serif;
+  font-weight: 700;
+  color: $bg-color;
+  //   background-color: white;
+  background-color: $secondary;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 
-    &:hover{
-        color: $secondary-color;
-    }
+  &:hover {
+    color: $secondary-color;
+  }
 }
 
 @media screen and (max-width: 500px) {
- 
-    .contactContainer{
-        flex-direction: column;
+  .contactContainer {
+    flex-direction: column;
 
-        .leftContent{
-            width: 100%;
-            padding-top: 20px;
-        }
+    .leftContent {
+      width: 100%;
+      padding-top: 20px;
     }
+  }
 }
 
 @media screen and (max-width: 500px) {
-    section{
-        height: 70px;
-    }
-    .overlay {
-        top: 70px;
-    }
-    
-    .rightContent{
-        display: none;
-    }
-    svg{
-        width: 30px !important;
-        height: 30px !important;
-    }
-    .btnLanguage{
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
-    }
-}
+  section {
+    height: 70px;
+  }
+  .overlay {
+    top: 70px;
+  }
 
+  .rightContent {
+    display: none;
+  }
+  svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .btnLanguage {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
