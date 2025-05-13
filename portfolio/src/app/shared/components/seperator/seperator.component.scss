@@ -1,0 +1,43 @@
+.projects-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    .hashtag {
+      color: #5a7dff;
+      font-weight: bold;
+      margin-right: 0.25rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .title {
+      color: white;
+      margin-right: 1rem;
+    }
+
+    .line {
+      height: 1px;
+      background-color: #5a7dff;
+      flex-grow: 1;
+      margin-top: 3px;
+    }
+  }
+
+  .view-all {
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+
+    margin-left: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
