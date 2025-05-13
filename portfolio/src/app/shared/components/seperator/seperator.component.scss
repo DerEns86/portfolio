@@ -28,16 +28,10 @@
       margin-top: 3px;
     }
   }
+}
 
-  .view-all {
-    color: white;
-    font-size: 0.9rem;
-    text-decoration: none;
-
-    margin-left: 1rem;
-
-    &:hover {
-      text-decoration: underline;
-    }
+@media screen and (max-width: 500px) {
+  .line {
+    margin-right: 0 !important;
   }
 }
