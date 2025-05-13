@@ -1,0 +1,26 @@
+@import "./../../../styles.scss";
+
+h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: 800;
+}
+
+section {
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-inline: 5vw;
+}
+
+.content {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.btn-primary {
+  align-self: flex-start;
+}

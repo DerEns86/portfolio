@@ -1,66 +1,48 @@
-<div
-  class="projectWrapper"
-  id="project{{ index }}"
-  [ngClass]="{ isHovered: project.isHovered }"
-  (mouseenter)="onMouseEnter(index)"
-  (mouseleave)="onMouseLeave(index)"
->
+<div>
   <div class="projectCard" [ngClass]="{ reverse: odd, normal: even }">
-    <div class="number" [ngClass]="{ end: even }">
-      <span>0{{ index + 1 }}/ 0{{ projects.length }}</span>
+    <div class="projectImg" (click)="openModal(baseImgUrl + project.imgUrl)">
+      <img src="{{ baseImgUrl }}{{ project.imgUrl }}" alt="" />
     </div>
 
-    <div class="wrapper">
-      <div class="projectImg">
-        <img src="{{ baseImgUrl }}{{ project.imgUrl }}" alt="" />
+    <div class="projectInfo">
+      <div>
+        <p class="usedTech">{{ project.usedTech.join(", ") }}</p>
+        <h2>{{ project.title }}</h2>
       </div>
 
-      <div
-        class="projectInfo"
-        data-aos-delay="300"
-        [attr.data-aos]="odd ? 'fade-right' : 'fade-left'"
-      >
-        <div>
-          <h3>{{ project.title }}</h3>
-          <p class="fontOverpass">{{ project.usedTech.join(" | ") }}</p>
-        </div>
+      <div class="projectDescription">
+        <span translate>{{ project.description }}</span>
+        @if(project.caution !== null){
+        <p translate class="caution-text">{{ project.caution }}</p>
+        }
+      </div>
+      <div class="d-flex btnContainer">
+        @if(project.seperateView){
 
-        <div class="projectDescription fontOverpass">
-          <p translate>{{ project.description }}</p>
-          @if(project.caution !== null){
-          <p translate class="caution-text">{{ project.caution }}</p>
-          }
+        <div
+          class="btn"
+          [routerLink]="[project.seperateViewPath]"
+          style="cursor: pointer"
+          translate
+        >
+          View More
         </div>
-        <div class="fontOverpass d-flex btnContainer">
-          @if(project.seperateView){
-          <!-- <div
-            class="btn"
-            [routerLink]="['/join']"
-            style="cursor: pointer"
-            translate
+        } @if(project.projectUrl !== '' && !project.seperateView){
+        <div class="btn">
+          <a href="{{ project.projectUrl }}" target="_blank" translate
+            >Live Test</a
           >
-            Live Test
-          </div> -->
-          <div
-            class="btn"
-            [routerLink]="[project.seperateViewPath]"
-            style="cursor: pointer"
-            translate
-          >
-            View More
-          </div>
-          } @if(project.projectUrl !== '' && !project.seperateView){
-          <div class="btn">
-            <a href="{{ project.projectUrl }}" target="_blank" translate
-              >Live Test</a
-            >
-          </div>
-          }
-          <div class="btn">
-            <a href="{{ project.gitUrl }}" target="_blank">Github</a>
-          </div>
+        </div>
+        }
+        <div class="btn">
+          <a href="{{ project.gitUrl }}" target="_blank">Github</a>
         </div>
       </div>
     </div>
   </div>
+  <app-img-modal
+    *ngIf="showModal"
+    [imageUrl]="selectedImageUrl"
+    (closeModal)="closeModal()"
+  ></app-img-modal>
 </div>

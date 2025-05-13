@@ -1,93 +1,22 @@
 @import "./../../../styles.scss";
 
 section {
-  font-family: "syne", sans-serif;
   padding-inline: 5vw;
-
-  .headline {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%) !important;
-    top: 4vw;
-    z-index: 2;
-    padding: 0 12px;
-
-    display: block;
-    width: fit-content;
-    text-align: center;
-
-    font-size: clamp(32px, 8vw, 128px);
-    font-weight: 900;
-
-    background-color: $bg-color;
-  }
-
-  .cardsContent {
-    border: 2px solid black;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: clamp(25px, 5vw, 200px);
-    column-gap: clamp(25px, 5vw, 120px);
-    row-gap: clamp(25px, 5vw, 120px);
-  }
-
-  .skillcard {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    width: 100px;
-    overflow: hidden;
-    text-align: center;
-    font-weight: bold;
-
-    img {
-      height: 75px;
-      transition: all 1s ease-in-out;
-    }
-
-    &:hover {
-      color: $secondary-color;
-    }
-
-    &:hover img {
-      animation: slideInOut 1s;
-    }
-  }
-
-  &:hover {
-    .headline {
-      color: $secondary-color;
-    }
-  }
 }
 
-@keyframes slideInOut {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  25% {
-    transform: translateX(-110%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(110%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-@media screen and (max-width: 700px) {
-  .cardsContent {
-    padding: 10vw 2vw !important;
-  }
+.wrapper {
+  border: 1px solid $secondary;
+  height: fit-content;
+  width: 12rem;
 
-  .skillcard {
-    img {
-      height: 60px !important;
-    }
+  span {
+    padding-right: 0.5rem;
   }
 }

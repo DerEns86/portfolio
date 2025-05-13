@@ -1,120 +1,94 @@
-@import './../../../styles.scss';
+@import "./../../../styles.scss";
 
 h1 {
-    font-size: clamp(32px, 8vw, 78px);
-    font-weight: 800;
-    padding-bottom: 35px;
-    padding-top: 35px;
-    &:hover {
-        color: $secondary-color;
-    }
+  font-size: clamp(32px, 8vw, 78px);
+  font-weight: 800;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  &:hover {
+    color: $secondary-color;
+  }
 }
 
 section {
-    // height: 100vh;
-    font-family: 'syne', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-inline: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 5vw;
 
-    >div {
-        // align-items: center;
-        gap: 40px;
-        justify-content: space-between;
+  > div {
+    // align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+  }
+
+  .profileImg img {
+    // max-height: 500px;
+    border-radius: 5px;
+    width: 400px;
+  }
+
+  .profileImg {
+    position: relative;
+    margin-right: 20px;
+    // margin-left: 5vw;
+    height: fit-content;
+    width: fit-content;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 2.5%;
+      top: 2.5%;
+      border: 4px solid black;
+      z-index: 1;
+      opacity: 0;
+      transition: 0.25s;
     }
 
-    .profileImg img {
-        // max-height: 500px;
-        border-radius: 5px;
-        width: 400px;
-
+    &:hover::before {
+      opacity: 1;
     }
-
-    .profileImg {
-        position: relative;
-        margin-right: 20px;
-        // margin-left: 5vw;
-        height: fit-content;
-        width: fit-content;
-
-
-
-        &::before {
-            content: "";
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            left: 2.5%;
-            top: 2.5%;
-            border: 4px solid black;
-            z-index: 1;
-            opacity: 0;
-            transition: 0.25s;
-        }
-
-        &:hover::before {
-            opacity: 1;
-        }
-    }
-
+  }
 }
 
 .about {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    max-width: 550px;
-    flex-wrap: wrap;
-    row-gap: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 550px;
+  flex-wrap: wrap;
+  row-gap: 30px;
 
-    >.text {
-        font-size: 23px;
-        text-wrap: balance;
-    }
+  > .text {
+    // font-size: 23px;
+    text-wrap: balance;
+  }
 }
 
-.talkBtn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 220px;
-    height: 70px;
-    border: 4px solid black;
-    font-size: 23px;
-    transition: transform 0.5s ease-in-out;
-    cursor: pointer;
-
-    &:hover {
-        transform: scaleX(1.2);
-        font-weight: 500;
-
-    }
-}
-
-.seperator:hover{
-    animation: drawPath2 2s ease forwards;
+.seperator:hover {
+  animation: drawPath2 2s ease forwards;
 }
 
 @media screen and (max-width: 800px) {
-    section {
-        >div {
-            flex-direction: column;
-        }
-
-        .profileImg img {
-            max-width: calc(90vw - 30px);
-        }
-
-        .talkBtn {
-            display: none;
-        }
+  section {
+    > div {
+      flex-direction: column;
     }
+
+    .profileImg img {
+      max-width: calc(90vw - 30px);
+    }
+
+    .talkBtn {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
-   
-
 }

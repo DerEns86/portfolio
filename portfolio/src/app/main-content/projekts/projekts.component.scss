@@ -1,25 +1,29 @@
 @import "./../../../styles.scss";
 
 section {
-  font-family: "syne", sans-serif;
   overflow: hidden;
   padding-inline: 5vw;
   padding-bottom: 20px;
 }
 
-h1 {
-  font-size: clamp(32px, 8vw, 78px);
-  text-align: center;
-  font-weight: 800;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  &:hover {
-    color: $secondary-color;
+  :first-child {
+    flex: 1;
   }
 }
 
-h2 {
-  font-size: 23px;
-  text-align: center;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+
+  @media (min-width: 1300px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .wrapper {

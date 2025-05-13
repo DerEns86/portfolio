@@ -34,10 +34,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init();
-    // this.pingWebsite();
+    // this.ping();
     // this.pingJoin();
-    this.ping();
-    this.pingJoin();
   }
 
   ping() {
