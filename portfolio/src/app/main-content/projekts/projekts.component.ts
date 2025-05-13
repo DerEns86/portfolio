@@ -5,11 +5,18 @@ import { getProjects } from '../../models/project-data';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import { SeperatorComponent } from '../../shared/components/seperator/seperator.component';
 
 @Component({
   selector: 'app-projekts',
   standalone: true,
-  imports: [CommonModule, TranslateModule, RouterLink, ProjectCardComponent],
+  imports: [
+    CommonModule,
+    TranslateModule,
+    RouterLink,
+    ProjectCardComponent,
+    SeperatorComponent,
+  ],
   templateUrl: './projekts.component.html',
   styleUrl: './projekts.component.scss',
 })

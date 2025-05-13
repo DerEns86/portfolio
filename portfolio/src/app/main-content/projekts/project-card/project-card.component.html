@@ -1,22 +1,22 @@
 <div>
   <div class="projectCard" [ngClass]="{ reverse: odd, normal: even }">
-    <div class="projectImg">
+    <div class="projectImg" (click)="openModal(baseImgUrl + project.imgUrl)">
       <img src="{{ baseImgUrl }}{{ project.imgUrl }}" alt="" />
     </div>
 
     <div class="projectInfo">
       <div>
-        <h3>{{ project.title }}</h3>
-        <p class="fontOverpass">{{ project.usedTech.join(", ") }}</p>
+        <p class="usedTech">{{ project.usedTech.join(", ") }}</p>
+        <h2>{{ project.title }}</h2>
       </div>
 
-      <div class="projectDescription fontOverpass">
-        <p translate>{{ project.description }}</p>
+      <div class="projectDescription">
+        <span translate>{{ project.description }}</span>
         @if(project.caution !== null){
         <p translate class="caution-text">{{ project.caution }}</p>
         }
       </div>
-      <div class="fontOverpass d-flex btnContainer">
+      <div class="d-flex btnContainer">
         @if(project.seperateView){
 
         <div
@@ -40,4 +40,9 @@
       </div>
     </div>
   </div>
+  <app-img-modal
+    *ngIf="showModal"
+    [imageUrl]="selectedImageUrl"
+    (closeModal)="closeModal()"
+  ></app-img-modal>
 </div>
