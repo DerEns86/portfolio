@@ -34,7 +34,7 @@ export function getProjects(): IProject[] {
       caution: 'The page may take up to two minutes to load!',
       // projectUrl: 'http://localhost:4200/join',
       projectUrl: 'https://v-ens.de/join',
-      gitUrl: 'https://github.com/DerEns86/Join',
+      gitUrl: 'https://github.com/DerEns86/join_api',
       isHovered: false,
       seperateView: true,
       seperateViewPath: '/join',
