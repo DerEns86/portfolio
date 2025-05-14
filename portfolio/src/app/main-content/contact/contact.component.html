@@ -1,48 +1,86 @@
 <!-- <div class="seperator"></div> -->
 <div class="wrapper">
-    <div class="section">
-        @if (!mailSubmitted) {
-        <h1 translate>Say Hi!</h1>
-        <h2 translate>Want to discuss a new project</h2>
-        <h3 translate>Say hello! Let's discuss your ideas and make it happen</h3>
-        <div class="formGroup">
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                <div>
-                    <input [(ngModel)]="contactData.name" type="text" name="nameInput" id="inputName"
-                    [attr.placeholder]="'Your Name' | translate" #name="ngModel" required>
-                    @if (!name.valid && name.touched) {
-                    <span class="required" translate>Please enter your name</span>
-                    }
-                </div>
-                <div>
-                    <input [(ngModel)]="contactData.email" type="email" name="email" id="inputEmail"
-                    [attr.placeholder]="'Your email' | translate" #email="ngModel" required
-                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-                    @if (!email.valid && email.touched) {
-                    <span class="required" translate>Please enter your e-mail</span>
-                    }
-                </div>
-                <div>
-                    <textarea [(ngModel)]="contactData.message" name="message" id="inputTextarea" cols="30" rows="10"
-                    [attr.placeholder]="'Your message' | translate" #message="ngModel" required></textarea>
-                    @if (!message.valid && message.touched) {
-                    <span class="required" translate>Please leave a message</span>
-                    }
-                </div>
-                <div class="privacy fontOverpass">
-                    <input [(ngModel)]="contactData.checked" type="checkbox" name="inputCheckbox" id="checkbox"
-                        required><span translate>I've read the <a [routerLink]="['/imprint']" translate>privacy policy</a> <span translate>and agree to the processing of my
-                        data as outlined</span></span>
-                </div>
-                <button [disabled]="!contactForm.valid" type="submit" class="sendMessage" translate>Send message</button>
-            </form>
-
+  <div class="section">
+    @if (!mailSubmitted) {
+    <h1 translate>Say Hi!</h1>
+    <h2 translate>Do you have any questions?</h2>
+    <h3 translate>Let's talk about them!</h3>
+    <div class="formGroup">
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <div>
+          <input
+            [(ngModel)]="contactData.name"
+            type="text"
+            name="nameInput"
+            id="inputName"
+            [attr.placeholder]="'Your Name' | translate"
+            #name="ngModel"
+            required
+          />
+          @if (!name.valid && name.touched) {
+          <span class="required" translate>Please enter your name</span>
+          }
         </div>
-    }@else {
-        <div class="submittedMessage " data-aos="flip-up">
-            <span class="fontOverpass" translate>Thank you!</span>
-            <span translate>I received your messsage and will answer you soon!</span>
+        <div>
+          <input
+            [(ngModel)]="contactData.email"
+            type="email"
+            name="email"
+            id="inputEmail"
+            [attr.placeholder]="'Your email' | translate"
+            #email="ngModel"
+            required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          />
+          @if (!email.valid && email.touched) {
+          <span class="required" translate>Please enter your e-mail</span>
+          }
         </div>
-    }
+        <div>
+          <textarea
+            [(ngModel)]="contactData.message"
+            name="message"
+            id="inputTextarea"
+            cols="30"
+            rows="10"
+            [attr.placeholder]="'Your message' | translate"
+            #message="ngModel"
+            required
+          ></textarea>
+          @if (!message.valid && message.touched) {
+          <span class="required" translate>Please leave a message</span>
+          }
+        </div>
+        <div class="privacy fontOverpass">
+          <input
+            [(ngModel)]="contactData.checked"
+            type="checkbox"
+            name="inputCheckbox"
+            id="checkbox"
+            required
+          /><span translate
+            >I've read the
+            <a [routerLink]="['/imprint']" translate>privacy policy</a>
+            <span translate
+              >and agree to the processing of my data as outlined</span
+            ></span
+          >
+        </div>
+        <button
+          [disabled]="!contactForm.valid"
+          type="submit"
+          class="sendMessage"
+          translate
+        >
+          Send message
+        </button>
+      </form>
     </div>
+    }@else {
+    <div class="submittedMessage" data-aos="flip-up">
+      <span class="fontOverpass" translate>Thank you!</span>
+      <span translate>I received your messsage and will answer you soon!</span>
+    </div>
+    }
+  </div>
 </div>
