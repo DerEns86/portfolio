@@ -3,6 +3,7 @@ import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { ImgModalComponent } from '../../../shared/img-modal/img-modal.component';
+import { IProject } from '../../../interfaces/project.interface';
 
 @Component({
   selector: 'app-project-card',
@@ -12,7 +13,7 @@ import { ImgModalComponent } from '../../../shared/img-modal/img-modal.component
   styleUrl: './project-card.component.scss',
 })
 export class ProjectCardComponent {
-  @Input() project: any;
+  @Input() project!: IProject;
   @Input() index!: number;
   @Input() odd!: boolean;
   @Input() even!: boolean;
