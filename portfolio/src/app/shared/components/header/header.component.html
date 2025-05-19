@@ -1,35 +1,67 @@
 <div class="width">
   <section>
-    <a href=""><img id="logo" src="./../../../../assets/img/ve-logo.png" alt=""></a>
-
-
+    <a href=""
+      ><img id="logo" src="./../../../../assets/img/ve-logo.png" alt=""
+    /></a>
 
     <div class="buttonRight d-flex">
-      
-      <div *ngIf="currentLanguage === 'en'"  (click)="changeLanguage()" class="btnLanguage">DE</div>
-      <div *ngIf="currentLanguage === 'de'"  (click)="changeLanguage()" class="btnLanguage">EN</div>
-      
+      <div
+        *ngIf="currentLanguage === 'en'"
+        (click)="changeLanguage()"
+        class="btnLanguage"
+      >
+        DE
+      </div>
+      <div
+        *ngIf="currentLanguage === 'de'"
+        (click)="changeLanguage()"
+        class="btnLanguage"
+      >
+        EN
+      </div>
+
       <div (click)="ontoggleMenu()" class="d-flex">
-        <svg *ngIf="!menuOpened" class="start" width="48" height="38" viewBox="0 0 48 38" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M2 2H42" stroke="black" stroke-width="4" stroke-linecap="square" />
-          <path d="M2 19H42" stroke="black" stroke-width="4" stroke-linecap="square" />
-          <path d="M2 36H42" stroke="black" stroke-width="4" stroke-linecap="square" />
+        <svg
+          *ngIf="!menuOpened"
+          class="start"
+          width="48"
+          height="38"
+          viewBox="0 0 48 38"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M2 2H42" stroke-width="4" stroke-linecap="square" />
+          <path d="M2 19H42" stroke-width="4" stroke-linecap="square" />
+          <path d="M2 36H42" stroke-width="4" stroke-linecap="square" />
         </svg>
 
-        <svg *ngIf="menuOpened" class="end" width="40" height="32" viewBox="0 0 40 32" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 15.8555L35.3209 2.99972" stroke="black" stroke-width="4" stroke-linecap="square" />
-          <path d="M4.67969 3.14258L35.3215 28.8541" stroke="black" stroke-width="4" stroke-linecap="square" />
-          <path d="M5 28.8555L20.3209 15.9997" stroke="black" stroke-width="4" stroke-linecap="square" />
+        <svg
+          *ngIf="menuOpened"
+          class="end"
+          width="40"
+          height="32"
+          viewBox="0 0 40 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 15.8555L35.3209 2.99972"
+            stroke-width="4"
+            stroke-linecap="square"
+          />
+          <path
+            d="M4.67969 3.14258L35.3215 28.8541"
+            stroke-width="4"
+            stroke-linecap="square"
+          />
+          <path
+            d="M5 28.8555L20.3209 15.9997"
+            stroke-width="4"
+            stroke-linecap="square"
+          />
         </svg>
-
       </div>
     </div>
-
-
-
-
   </section>
 </div>
 
@@ -38,23 +70,35 @@
 <div class="overlay">
   <div class="wrapper d-flex">
     <div class="links">
-      <a href="#aboutMe"><span (click)="onCloseMenu()" translate>About me</span></a>
-      <a href="#skills"><span (click)="onCloseMenu()" translate>My skills</span></a>
+      <a href="#aboutMe"
+        ><span (click)="onCloseMenu()" translate>About me</span></a
+      >
+      <a href="#skills"
+        ><span (click)="onCloseMenu()" translate>My skills</span></a
+      >
       <a href="#projects"><span (click)="onCloseMenu()">Portfolio</span></a>
     </div>
     <div class="wrapperWidth" data-aos="fade-up">
       <div class="contactContainer d-flex">
         <div class="leftContent">
           <h2 translate>Say Hi!</h2>
-          <p class="fontOverpass" (click)="onCloseMenu()"><a href="#contact">contact&#64;v-ens.de</a></p>
+          <p class="fontOverpass" (click)="onCloseMenu()">
+            <a href="#contact">contact&#64;v-ens.de</a>
+          </p>
         </div>
         <div class="rightContent">
           <div class="socialLinks">
-            <a href="https://github.com/derens86" target="_blank"><img src="./../../../../assets/img/icon/github.png"
-                alt=""></a>
-            <a href="#contact" (click)="onCloseMenu()"><img src="./../../../../assets/img/icon/eMail.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/viktor-ens-ba69aa246" target="_blank"><img
-                src="./../../../../assets/img/icon/linkedIn.png" alt=""></a>
+            <a href="https://github.com/derens86" target="_blank"
+              ><img src="./../../../../assets/img/icon/github.png" alt=""
+            /></a>
+            <a href="#contact" (click)="onCloseMenu()"
+              ><img src="./../../../../assets/img/icon/eMail.png" alt=""
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/viktor-ens-ba69aa246"
+              target="_blank"
+              ><img src="./../../../../assets/img/icon/linkedIn.png" alt=""
+            /></a>
           </div>
         </div>
       </div>

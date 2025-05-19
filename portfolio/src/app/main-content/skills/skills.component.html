@@ -1,90 +1,17 @@
-<!-- <section>
-  <span class="headline" data-aos="zoom-in" translate>My skills</span>
-  <div class="cardsContent d-flex">
-    <div
-      *ngFor="let skill of skills; let i = index"
-      class="skillcard d-flex"
-      data-aos="flip-down"
-      data-aos-offset="20"
-    >
-      <img
-        src="./../../../assets/img/icon/{{ skill.iconPath }}"
-        alt="{{ skill.name }}"
-      />
-      <p class="fontOverpass">{{ skill.name }}</p>
-    </div>
-  </div>
-</section>
-<div class="isMirrored">
-  <div class="seperatorWrapper" data-aos="zoom-in">
-    <div class="seperatorArrow">
-      <img src="./../../../assets/img/icon/arrowStatic.png" alt="" />
-    </div>
-  </div>
-</div> -->
-<!-- 
-<div
-  *ngFor="let skill of skills; let i = index"
-  class="skillcard d-flex"
-  data-aos="flip-down"
-  data-aos-offset="20"
->
-  <img
-    src="./../../../assets/img/icon/{{ skill.iconPath }}"
-    alt="{{ skill.name }}"
-  />
-  <p class="fontOverpass">{{ skill.name }}</p>
-</div> -->
-
 <section>
-  <!-- <div class="projects-header">
-    <div class="title-container">
-      <h2><span class="hashtag">#</span><span class="title">skills</span></h2>
-      <div class="line"></div>
-    </div>
-  </div> -->
-  <app-seperator label="skills" marginRight="20rem" />
+  <app-seperator label="skills" marginRight="20rem" data-aos="zoom-in" />
   <div>
     <div class="skill-list">
+      @for (category of skills; track $index) {
       <div class="wrapper">
-        <p>Languages</p>
-        <hr />
-        @for (item of languages; track $index) {
-        <span>{{ item }}<br /></span>
-        }
+        <p>{{ category.key | titlecase }}</p>
+        <ul>
+          @for (item of category.values; track $index) {
+          <li>{{ item }}</li>
+          }
+        </ul>
       </div>
-
-      <div class="wrapper">
-        <p>frameworks</p>
-        <hr />
-        @for (item of frameworks; track $index) {
-        <span>{{ item }}<br /></span>
-        }
-      </div>
-
-      <div class="wrapper">
-        <p>tools</p>
-        <hr />
-        @for (item of tools; track $index) {
-        <span>{{ item }}<br /></span>
-        }
-      </div>
-
-      <div class="wrapper">
-        <p>databases</p>
-        <hr />
-        @for (item of databases; track $index) {
-        <span>{{ item }}<br /></span>
-        }
-      </div>
-
-      <div class="wrapper">
-        <p>other</p>
-        <hr />
-        @for (item of other; track $index) {
-        <span>{{ item }}<br /></span>
-        }
-      </div>
+      }
     </div>
   </div>
 </section>

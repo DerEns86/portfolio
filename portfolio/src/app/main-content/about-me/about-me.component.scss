@@ -1,15 +1,5 @@
 @import "./../../../styles.scss";
 
-h1 {
-  font-size: clamp(32px, 8vw, 78px);
-  font-weight: 800;
-  padding-bottom: 35px;
-  padding-top: 35px;
-  &:hover {
-    color: $secondary-color;
-  }
-}
-
 section {
   display: flex;
   flex-direction: column;
@@ -17,8 +7,6 @@ section {
   padding-inline: 5vw;
 
   > div {
-    // align-items: center;
-    gap: 40px;
     justify-content: space-between;
   }
 
@@ -54,13 +42,19 @@ section {
   }
 }
 
+.text {
+  :first-child {
+    margin-block: 0;
+  }
+}
+
 .about {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  max-width: 550px;
+  // max-width: 550px;
   flex-wrap: wrap;
   row-gap: 30px;
 
@@ -79,11 +73,12 @@ section {
     > div {
       flex-direction: column;
     }
-
-    .profileImg img {
-      max-width: calc(90vw - 30px);
+    .profileImg {
+      align-self: center;
     }
-
+    .profileImg img {
+      max-width: calc(70vw - 30px);
+    }
     .talkBtn {
       display: none;
     }

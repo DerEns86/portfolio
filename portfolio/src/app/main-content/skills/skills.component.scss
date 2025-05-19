@@ -7,8 +7,8 @@ section {
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
 .wrapper {
@@ -16,7 +16,27 @@ section {
   height: fit-content;
   width: 12rem;
 
-  span {
-    padding-right: 0.5rem;
+  p {
+    border-bottom: 1px solid $secondary;
+    margin-block: 0;
+    padding: 0.5rem;
+    font-weight: 600;
+  }
+
+  ul {
+    padding-inline-start: 0;
+    margin-block: 0;
+    padding: 0.5rem;
+  }
+
+  li {
+    list-style: none;
+    font-weight: 100;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    width: fit-content;
   }
 }

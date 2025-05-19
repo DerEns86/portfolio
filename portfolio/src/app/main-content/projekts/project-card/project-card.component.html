@@ -25,7 +25,7 @@
           style="cursor: pointer"
           translate
         >
-          View More
+          <span> View More</span>
         </div>
         } @if(project.projectUrl !== '' && !project.seperateView){
         <div class="btn">
@@ -40,9 +40,9 @@
       </div>
     </div>
   </div>
-  <app-img-modal
+  <!-- <app-img-modal
     *ngIf="showModal"
     [imageUrl]="selectedImageUrl"
     (closeModal)="closeModal()"
-  ></app-img-modal>
+  ></app-img-modal> -->
 </div>
