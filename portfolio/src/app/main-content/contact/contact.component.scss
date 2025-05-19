@@ -1,165 +1,160 @@
-@import './../../../styles.scss';
-
+@import "./../../../styles.scss";
 
 .seperator {
-
-    clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 100%);
-    background-color: black;
-    color: $bg-color;
-    height: 15vh;
-    margin-bottom: -1px;
+  clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 100%);
+  background-color: black;
+  color: $bg-color;
+  height: 15vh;
+  margin-bottom: -1px;
 }
 
 .wrapper {
-    clip-path: polygon(0% 0%, 100% 12.5%, 100% 100%, 0% 100%);
-    background-color: black;
+  clip-path: polygon(0% 0%, 100% 12.5%, 100% 100%, 0% 100%);
+  background-color: black;
 }
 
 .section {
-    // leftTop,rightTop,rightBottom leftBottom
+  // leftTop,rightTop,rightBottom leftBottom
 
-    max-width: 1420px;
-    width: 100%;
-    margin: 0 auto;
-    color: $bg-color;
-    // width: 90vw;
+  max-width: 1420px;
+  width: 100%;
+  margin: 0 auto;
+  color: $bg-color;
+  // width: 90vw;
 
-    // padding-left: 5vw;
-    // padding-right: 5vw;
-    // padding-top: 50px;
-    padding: 50px 5vw 35px 5vw;
+  // padding-left: 5vw;
+  // padding-right: 5vw;
+  // padding-top: 50px;
+  padding: 50px 5vw 35px 5vw;
 
+  font-family: "syne", sans-serif;
+  color: $bg-color;
+  background-color: black;
 
-    font-family: 'syne', sans-serif;
-    color: $bg-color;
-    background-color: black;
+  h1 {
+    font-size: clamp(45px, 8vw, 128px);
+    // position: relative;
+    left: 10vw;
+    bottom: 92px;
+    padding-top: 20px;
+    width: fit-content;
 
-    h1 {
-        font-size: clamp(45px, 8vw, 128px);
-        // position: relative;
-        left: 10vw;
-        bottom: 92px;
-        padding-top: 20px;
-        width: fit-content;
-
-        &:hover {
-            color: $secondary-color;
-        }
+    &:hover {
+      color: $secondary-color;
     }
+  }
 
+  h2 {
+    color: $secondary-color;
+    text-align: center;
+  }
 
-    h2 {
-        color: $secondary-color;
-        text-align: center;
-    }
+  h3 {
+    text-align: center;
+  }
 
-    h3 {
-        text-align: center;
-    }
-
-    .formGroup {
-        display: flex;
-        justify-content: center;
-    }
+  .formGroup {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 620px;
+  width: 100%;
+  gap: 28px;
+
+  ::placeholder {
+    color: rgba(255, 252, 243, 1);
+    font-family: "syne", sans-serif;
+  }
+
+  div {
     width: 100%;
-    gap: 28px;
+  }
 
-    ::placeholder {
-        color: rgba(255, 252, 243, 1);
-        font-family: 'syne', sans-serif;
+  input,
+  textarea {
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 252, 243, 1);
+    width: 100%;
+    font-family: "Overpass", sans-serif;
 
+    &:hover {
+      border: 4px solid $bg-color;
     }
-
-    div {
-        width: 100%;
+    &:focus {
+      border: 2px solid $bg-color;
     }
+  }
 
-    input,
-    textarea {
-        background-color: black;
-        color: $bg-color;
-        outline: none;
-        border: none;
-        border-bottom: 2px solid rgba(255, 252, 243, 1);
-        width: 100%;
-        font-family: 'Overpass', sans-serif;
+  input[type="text"],
+  input[type="email"] {
+    height: 50px;
+  }
 
-        &:hover {
-            border: 4px solid $bg-color;
-        }
-        &:focus {
-            border: 2px solid $bg-color;
-        }
-    }
-
-    input[type=text],
-    input[type=email] {
-        height: 50px;
-    }
-
-    .required {
-        color: red;
-        font-size: 0.8rem;
-    }
+  .required {
+    color: red;
+    font-size: 0.8rem;
+  }
 }
 
 .privacy {
-    display: flex;
-    width: 100%;
-    font-size: 14px;
+  display: flex;
+  width: 100%;
+  font-size: 14px;
 
-    >input {
-        width: fit-content;
-        border-color: rgba(255, 252, 243, 1);
-        background-color: black;
-        // color: white;
-        margin-right: 8px;
-        cursor: pointer;
-    }
+  > input {
+    width: fit-content;
+    border-color: rgba(255, 252, 243, 1);
+    background-color: black;
+    // color: white;
+    margin-right: 8px;
+    cursor: pointer;
+  }
 
-    >span a {
-        text-decoration: none;
-        padding: 0 4px;
-        color: $secondary-color;
-    }
+  > span a {
+    text-decoration: none;
+    padding: 0 4px;
+    color: $secondary-color;
+  }
 }
 
 button {
-    padding: 20px 60px;
-    border: 4px solid rgba(187, 187, 187, 1);
-    background-color: black;
-    color: rgba(187, 187, 187, 1);
-    cursor: pointer;
+  padding: 20px 60px;
+  border: 4px solid rgba(187, 187, 187, 1);
+  background-color: black;
+  color: rgba(187, 187, 187, 1);
+  cursor: pointer;
 
-    &:disabled {
-        opacity: 30%;
-        cursor:not-allowed;
-    }
+  &:disabled {
+    opacity: 30%;
+    cursor: not-allowed;
+  }
 }
 
-.submittedMessage{
-    width: 90vw;
-    max-width: 400px;
-    color: $bg-color;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    border: 4px solid $bg-color;
-    text-align: center;
-    padding: 40px 5vw;
-    
-    :first-child{
-        color: $secondary-color;
-        font-size: 40px;
-    }
+.submittedMessage {
+  width: 90vw;
+  max-width: 400px;
+  color: $bg-color;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  border: 4px solid $bg-color;
+  text-align: center;
+  padding: 40px 5vw;
+
+  :first-child {
+    color: $secondary-color;
+    font-size: 40px;
+  }
 }
