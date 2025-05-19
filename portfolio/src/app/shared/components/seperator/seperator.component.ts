@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
 })
 export class SeperatorComponent {
   @Input() label: string = '';
-  @Input() marginRight: string = '0';
+  // @Input() marginRight: string = '0';
 }

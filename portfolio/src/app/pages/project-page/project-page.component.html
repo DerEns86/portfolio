@@ -2,7 +2,7 @@
   <h2>/projects</h2>
   <h3>Liste meiner Projekte</h3>
 
-  <div class="projects-grid">
+  <div class="projects-grid" data-aos="zoom-in">
     @for (project of projects; track project.id; let index = $index, odd = $odd,
     even = $even) {
 
@@ -18,7 +18,7 @@
 
   <h3>#WIP-Projekte</h3>
 
-  <div class="projects-grid">
+  <div class="projects-grid" data-aos="zoom-in">
     @for (project of wipProjects; track project.id; let index = $index, odd =
     $odd, even = $even) {
 

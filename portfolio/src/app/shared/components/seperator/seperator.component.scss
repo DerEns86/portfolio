@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 0;
 
   .title-container {
     display: flex;
@@ -12,7 +12,7 @@
     .hashtag {
       color: #5a7dff;
       font-weight: bold;
-      margin-right: 0.25rem;
+      // margin-right: 0.5rem;
       letter-spacing: 0.1rem;
     }
 
