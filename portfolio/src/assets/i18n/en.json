@@ -1,16 +1,17 @@
 {
-  "About me": "About me",
-  "My skills": "My skills",
+  "about me": "about me",
+  "my skills": "my skills",
+  "projects": "projects",
   "Say Hi!": "Say Hi!",
   "Developer": "Developer",
-  "Viktor is a web developer with focus on Angular and Java.": "Viktor is a web developer with focus on Angular and Java.",
-  "He combines modern technologies with practical experience.": "He combines modern technologies with practical experience.",
+  "Hi, i'm Viktor": "Hi, i'm Viktor",
+  "Fullstack developer with focus on Angular and Java": "Fullstack developer with focus on Angular and Java",
   "aboutMe_content1": "Hello, my name is Viktor, I am a passionate Web-Developer from Waldbroel.",
   "aboutMe_content2": "With enthusiasm for modern web technologies, I develop applications using Java Spring Boot, JavaScript, and Angular – both in personal projects and in teams, always open to new challenges.",
   "aboutMe_content3": "I am fascinated by the diversity of programming, and as a Junior Developer, I strive to continuously expand my knowledge and apply it practically in various projects.",
   "aboutMe_content4": "You are cordially invited to explore my public portfolio.",
   "Let's talk": "Let's talk",
-  "Feel free": "Feel free to try out my latest development projects and look into their code..",
+  "Feel free": "Feel free to try out my development projects and look into their code..",
   "This stop-smoking app tracks daily cigarette consumption and shows saved cigarettes and money. Additionally, users can add or delete personal motivations and goals with prices.": "This stop-smoking app tracks daily cigarette consumption and shows saved cigarettes and money. Additionally, users can add or delete personal motivations and goals with prices.",
   "The page may take up to two minutes to load!": "The page may take up to two minutes to load!",
   "A software designed to efficiently manage manufacturing processes in machining operations. It allows for the management of employees, machine assignments, and project planning.": "A software designed to efficiently manage manufacturing processes in machining operations. It allows for the management of employees, machine assignments, and project planning.",
@@ -47,5 +48,7 @@
   "FamNotify is a real-time notification system for families. Parents send reminders as emojis or GIFs, which children can acknowledge with a click. Thanks to Express, Vue.js, and Socket.IO, the transmission is instantaneous—ideal for short messages in everyday family life.": "FamNotify is a real-time notification system for families. Parents send reminders as emojis or GIFs, which children can acknowledge with a click. Thanks to Express, Vue.js, and Socket.IO, the transmission is instantaneous—ideal for short messages in everyday family life.",
   "Discover my other projects, in which I combine different technologies and approaches to expand my knowledge and skills.": "Discover my other projects, in which I combine different technologies and approaches to expand my knowledge and skills.",
   "URL Shortener is a full-stack web application that allows users to shorten long URLs into more manageable links. The application also provides analytics on the usage of the shortened URLs.": "URL Shortener is a full-stack web application that allows users to shorten long URLs into more manageable links. The application also provides analytics on the usage of the shortened URLs.",
-  "An Angular fake store. It serves as a sample application for using Angular features such as signals, routing, services, and HTTP client. It uses the FakeStore API as a data source and supports dynamic routing, category filtering, and shopping cart management.": "An Angular fake store. It serves as a sample application for using Angular features such as signals, routing, services, and HTTP client. It uses the FakeStore API as a data source and supports dynamic routing, category filtering, and shopping cart management."
+  "An Angular fake store. It serves as a sample application for using Angular features such as signals, routing, services, and HTTP client. It uses the FakeStore API as a data source and supports dynamic routing, category filtering, and shopping cart management.": "An Angular fake store. It serves as a sample application for using Angular features such as signals, routing, services, and HTTP client. It uses the FakeStore API as a data source and supports dynamic routing, category filtering, and shopping cart management.",
+  "All": "All",
+  "Projects": "Projects"
 }

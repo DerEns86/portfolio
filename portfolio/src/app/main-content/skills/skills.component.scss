@@ -7,13 +7,13 @@ section {
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 1rem;
 }
 
 .wrapper {
   border: 1px solid $secondary;
-  height: fit-content;
+  height: 203px;
   width: 12rem;
 
   p {
@@ -38,5 +38,10 @@ section {
 @media screen and (max-width: 480px) {
   .wrapper {
     width: fit-content;
+  }
+}
+@media screen and (max-width: 700px) {
+  .skill-list {
+    justify-content: center;
   }
 }

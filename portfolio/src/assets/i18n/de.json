@@ -1,17 +1,18 @@
 {
-  "About me": "Über mich",
-  "My skills": "Skills",
+  "about me": "über mich",
+  "my skills": "skills",
+  "projects": "projekte",
   "Say Hi!": "Sag Hi!",
   "Developer": "Entwickler",
 
-  "Viktor is a web developer with focus on Angular and Java.": "Viktor ist Webentwickler mit Fokus auf Angular und Java.",
-  "He combines modern technologies with practical experience.": "Er verbindet moderne Technologien mit praktischer Erfahrung.",
+  "Hi, i'm Viktor": "Hi, ich bin Viktor",
+  "Fullstack developer with focus on Angular and Java": "Fullstack-Entwickler mit Fokus auf Angular und Java",
   "aboutMe_content1": "Hallo, mein Name ist Viktor, ich bin ein engagierter Web-Entwickler aus Waldbröl im Oberbergischen Kreis.",
   "aboutMe_content2": "Mit Begeisterung für moderne Webtechnologien entwickle ich Anwendungen mit Java Spring Boot, JavaScript und Angular – sowohl in Eigenprojekten als auch im Team, stets offen für neue Herausforderungen.",
   "aboutMe_content3": "Die Vielfalt der Programmierung fasziniert mich, und als Junior Entwickler setze ich alles daran, mein Wissen kontinuierlich zu erweitern und in verschiedenen Projekten praktisch anzuwenden.",
   "aboutMe_content4": "Sie sind herzlich eingeladen, mein öffentliches Portfolio zu erkunden.",
   "Let's talk": "Kontakt",
-  "Feel free": "Fühlen Sie sich frei, meine neuesten Entwicklungsprojekte auszuprobieren und in ihren Code zu schauen...",
+  "Feel free": "Fühlen Sie sich frei, meine Entwicklungsprojekte auszuprobieren und in ihren Code zu schauen...",
   "This stop-smoking app tracks daily cigarette consumption and shows saved cigarettes and money. Additionally, users can add or delete personal motivations and goals with prices.": "Diese Stop-Smoking-App ermöglicht das Erfassen der täglich gerauchten Zigaretten und zeigt gesparte Zigaretten sowie Geld an. Zusätzlich können persönliche Motivationen und Ziele mit Preisen hinzugefügt oder gelöscht werden.",
   "The page may take up to two minutes to load!": "Das Laden der Seite kann bis zu zwei Minuten dauern!",
   "A software designed to efficiently manage manufacturing processes in machining operations. It allows for the management of employees, machine assignments, and project planning.": "Ein Programm zur effizienten Steuerung der Fertigungsprozesse in der Zerspanung. Es ermöglicht die Verwaltung von Mitarbeitern, die Zuweisung von Maschinen und die Planung von Projekten.",
@@ -48,5 +49,7 @@
   "FamNotify is a real-time notification system for families. Parents send reminders as emojis or GIFs, which children can acknowledge with a click. Thanks to Express, Vue.js, and Socket.IO, the transmission is instantaneous—ideal for short messages in everyday family life.": "FamNotify ist ein Echtzeit-Benachrichtigungssystem für Familien. Eltern senden Erinnerungen als Emojis oder GIFs, die Kinder mit einem Klick bestätigen können. Dank Express, Vue.js und Socket.IO erfolgt die Übertragung verzögerungsfrei – ideal für kurze Mitteilungen im Familienalltag.",
   "Discover my other projects, in which I combine different technologies and approaches to expand my knowledge and skills.": "Entdecken Sie auch meine weiteren Projekte, in denen ich verschiedene Technologien und Ansätze kombiniere, um meine Kenntnisse und Fähigkeiten zu erweitern.",
   "URL Shortener is a full-stack web application that allows users to shorten long URLs into more manageable links. The application also provides analytics on the usage of the shortened URLs.": "URL Shortener ist eine Full Stack Webanwendung, die es Benutzern ermöglicht, lange URLs in besser verwaltbare Links zu kürzen. Die Anwendung bietet außerdem Analysen zur Nutzung der verkürzten URLs.",
-  "An Angular fake store. It serves as a sample application for using Angular features such as signals, routing, services, and HTTP client. It uses the FakeStore API as a data source and supports dynamic routing, category filtering, and shopping cart management.": "Ein Angular Fake-Shop. Es dient als Beispielanwendung für die Verwendung von Angular-Funktionen wie signals, routing, services und HTTP-Client. Es nutzt die FakeStore-API als Datenquelle und unterstützt dynamische Routen, Filterung nach Kategorie und Verwaltung eines Warenkorbs."
+  "An Angular fake store. It serves as a sample application for using Angular features such as signals, routing, services, and HTTP client. It uses the FakeStore API as a data source and supports dynamic routing, category filtering, and shopping cart management.": "Ein Angular Fake-Shop. Es dient als Beispielanwendung für die Verwendung von Angular-Funktionen wie signals, routing, services und HTTP-Client. Es nutzt die FakeStore-API als Datenquelle und unterstützt dynamische Routen, Filterung nach Kategorie und Verwaltung eines Warenkorbs.",
+  "All": "Alle",
+  "Projects": "Projekte"
 }
