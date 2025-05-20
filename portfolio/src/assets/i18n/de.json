@@ -1,11 +1,11 @@
 {
-  "About me": "Über mich",
+  "about me": "über mich",
   "My skills": "Skills",
   "Say Hi!": "Sag Hi!",
   "Developer": "Entwickler",
 
-  "Viktor is a web developer with focus on Angular and Java.": "Viktor ist Webentwickler mit Fokus auf Angular und Java.",
-  "He combines modern technologies with practical experience.": "Er verbindet moderne Technologien mit praktischer Erfahrung.",
+  "Hi, i'm Viktor": "Hi, ich bin Viktor",
+  "Fullstack developer with focus on Angular and Java": "Fullstack-Entwickler mit Fokus auf Angular und Java",
   "aboutMe_content1": "Hallo, mein Name ist Viktor, ich bin ein engagierter Web-Entwickler aus Waldbröl im Oberbergischen Kreis.",
   "aboutMe_content2": "Mit Begeisterung für moderne Webtechnologien entwickle ich Anwendungen mit Java Spring Boot, JavaScript und Angular – sowohl in Eigenprojekten als auch im Team, stets offen für neue Herausforderungen.",
   "aboutMe_content3": "Die Vielfalt der Programmierung fasziniert mich, und als Junior Entwickler setze ich alles daran, mein Wissen kontinuierlich zu erweitern und in verschiedenen Projekten praktisch anzuwenden.",
