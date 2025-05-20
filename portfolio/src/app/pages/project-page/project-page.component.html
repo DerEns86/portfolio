@@ -1,26 +1,31 @@
 <section>
-  <h2>/projects</h2>
-  <h3>Liste meiner Projekte</h3>
-
-  <div class="projects-grid" data-aos="zoom-in">
-    @for (project of projects; track project.id; let index = $index, odd = $odd,
-    even = $even) {
-
-    <app-project-card
-      [project]="project"
-      [index]="index"
-      [odd]="odd"
-      [even]="even"
-    ></app-project-card>
-
-    }
+  <div class="wrapper">
+    <div class="breadcrumb">
+      <h2>
+        <span routerLink="">home</span>/<span>projects</span>/
+        <span>{{ filterSignal().toLowerCase() }}</span>
+      </h2>
+    </div>
+  </div>
+  <p translate>Feel free</p>
+  <div class="btn-container">
+    <div class="btn" (click)="handleFilter('All')" translate>All</div>
+    <div class="btn" (click)="handleFilter('Java')">Java</div>
+    <div class="btn" (click)="handleFilter('Angular')">Angular</div>
+  </div>
+  <div class="seperator">
+    <h3>
+      <span class="hashtag">### </span>{{ filterSignal() | translate }}-<span
+        translate
+        >Projects</span
+      >
+    </h3>
+    <div class="line"></div>
   </div>
 
-  <h3>#WIP-Projekte</h3>
-
   <div class="projects-grid" data-aos="zoom-in">
-    @for (project of wipProjects; track project.id; let index = $index, odd =
-    $odd, even = $even) {
+    @for (project of filteredProjects(); track project.id; let index = $index,
+    odd = $odd, even = $even) {
 
     <app-project-card
       [project]="project"

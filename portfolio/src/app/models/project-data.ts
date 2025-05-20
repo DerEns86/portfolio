@@ -43,7 +43,7 @@ export function getProjects(): IProject[] {
       id: 1,
       imgUrl: 'timeToQuit.png',
       title: 'Time-To-Quit',
-      usedTech: ['Java Spring Boot', 'React', 'MongoDB', 'OAuth'],
+      usedTech: ['Java', 'Spring Boot', 'React', 'MongoDB', 'OAuth'],
       description:
         'This stop-smoking app tracks daily cigarette consumption and shows saved cigarettes and money. Additionally, users can add or delete personal motivations and goals with prices.',
       caution: 'The page may take up to two minutes to load!',
