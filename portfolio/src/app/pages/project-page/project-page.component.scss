@@ -73,6 +73,7 @@ section {
   padding: 0.5rem 1rem;
   width: 102px;
   text-align: center;
+  cursor: pointer;
 
   &:hover {
     background-color: $primary;
@@ -86,6 +87,12 @@ section {
   }
   a {
     text-decoration: none;
+  }
+
+  &.active {
+    background: $primary;
+    color: #fff;
+    border: 1px solid $primary;
   }
 }
 .projects-grid {

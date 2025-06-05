@@ -9,16 +9,34 @@
   </div>
   <p translate>Feel free</p>
   <div class="btn-container">
-    <div class="btn" (click)="handleFilter('All')" translate>All</div>
-    <div class="btn" (click)="handleFilter('Java')">Java</div>
-    <div class="btn" (click)="handleFilter('Angular')">Angular</div>
+    <div
+      class="btn"
+      (click)="handleFilter('All')"
+      translate
+      [class.active]="filterSignal() === 'All'"
+    >
+      All
+    </div>
+    <div
+      class="btn"
+      (click)="handleFilter('Java')"
+      [class.active]="filterSignal() === 'Java'"
+    >
+      Java
+    </div>
+    <div
+      class="btn"
+      (click)="handleFilter('Angular')"
+      [class.active]="filterSignal() === 'Angular'"
+    >
+      Angular
+    </div>
   </div>
   <div class="seperator">
     <h3>
-      <span class="hashtag">### </span>{{ filterSignal() | translate }}-<span
-        translate
-        >Projects</span
-      >
+      <span class="hashtag">### </span
+      ><span>{{ filterSignal() | translate }}-</span
+      ><span translate>Projects</span>
     </h3>
     <div class="line"></div>
   </div>

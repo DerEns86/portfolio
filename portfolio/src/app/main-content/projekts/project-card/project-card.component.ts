@@ -2,13 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { ImgModalComponent } from '../../../shared/img-modal/img-modal.component';
 import { IProject } from '../../../interfaces/project.interface';
 
 @Component({
   selector: 'app-project-card',
   standalone: true,
-  imports: [RouterLink, CommonModule, TranslateModule, ImgModalComponent],
+  imports: [RouterLink, CommonModule, TranslateModule],
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.scss',
 })
