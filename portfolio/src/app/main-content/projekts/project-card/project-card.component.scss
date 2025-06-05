@@ -41,6 +41,7 @@
 
 .projectDescription {
   padding: 0.5rem;
+  min-height: 230px;
 
   .caution-text {
     margin-block: 0;
@@ -56,7 +57,7 @@
 .btn {
   border: 1px solid $primary;
   padding: 0.5rem 1rem;
-
+  cursor: pointer;
   &:hover {
     background-color: $primary;
 

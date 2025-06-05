@@ -19,12 +19,7 @@
       <div class="d-flex btnContainer">
         @if(project.seperateView){
 
-        <div
-          class="btn"
-          [routerLink]="[project.seperateViewPath]"
-          style="cursor: pointer"
-          translate
-        >
+        <div class="btn" [routerLink]="[project.seperateViewPath]" translate>
           <span> View More</span>
         </div>
         } @if(project.projectUrl !== '' && !project.seperateView){

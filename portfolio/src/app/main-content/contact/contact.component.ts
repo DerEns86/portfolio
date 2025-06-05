@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
-import { ImprintComponent } from '../../pages/imprint/imprint.component';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -15,7 +14,6 @@ import { RouterLink } from '@angular/router';
     ReactiveFormsModule,
     TranslateModule,
     RouterLink,
-    ImprintComponent,
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
